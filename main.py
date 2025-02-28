@@ -5,7 +5,7 @@ import argparse
 import endpoint_urls as urls
 
 import data_fetching as df
-import data_transformation as dt
+from data_transformation import DataTransformer, TeamsTransformationStrategy, FranchiseTransformationStrategy
 from data_persistence import DatabaseManager
 
 parser = argparse.ArgumentParser()
@@ -24,17 +24,20 @@ def main() -> int:
     env = os.getenv("PLATFORM")
 
     # Data Fetching
-    data_fetcher = df.DataFetchFactory.get_fetcher('teams', env)
-    teams_data = data_fetcher.fetch()
+    data_fetcher    = df.DataFetchFactory()
+    franchise_data  = data_fetcher.get_fetcher('franchise', env).fetch()
+    teams_data      = data_fetcher.get_fetcher('teams', env).fetch()
 
     # Data Transformation
-    teams_transformer = dt.DataTransformer(dt.TeamsTransformationStrategy())
-    normalized_teams = teams_transformer.transform(teams_data)
+    normalized_franchise    = DataTransformer(FranchiseTransformationStrategy()).transform(franchise_data)
+    normalized_teams        = DataTransformer(TeamsTransformationStrategy()).transform(teams_data)
 
     # Data Persistence
     dbManager = DatabaseManager(engine)
+    dbManager.save_franchise_data(normalized_franchise)
     dbManager.save_teams_data(normalized_teams)
 
+    
     return 0
 
 if __name__ == '__main__':

@@ -13,7 +13,7 @@ class DatabaseManager:
         session = self.Session()
         try:
             with self.engine.begin() as conn:
-                data.to_sql(table_name, con=conn, if_exists="replace", index=False)
+                data.to_sql(table_name, con=conn, if_exists="append", index=False)
                 print(f">>> Data stored to {table_name}")
         except Exception as e:
             print(">>> Something went wrong while saving to db!")
@@ -23,5 +23,8 @@ class DatabaseManager:
             session.close()
 
 
-    def save_teams_data(self, data: pd.DataFrame):
+    def save_franchise_data(self, data: pd.DataFrame):
         self.save(data, "franchise")
+    
+    def save_teams_data(self, data: pd.DataFrame):
+        self.save(data, "teams")

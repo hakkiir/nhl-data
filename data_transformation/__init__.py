@@ -1,4 +1,4 @@
 # Tuo automaattisesti TeamsDataFetcher, kun paketti tuodaan
-from .data_transformer import DataTransformer, TeamsTransformationStrategy
+from .data_transformer import DataTransformer, TeamsTransformationStrategy, FranchiseTransformationStrategy
 
-__all__ = ['DataTransformer', 'TeamsTransformationStrategy']
+__all__ = ['DataTransformer', 'TeamsTransformationStrategy', 'FranchiseTransformationStrategy']
