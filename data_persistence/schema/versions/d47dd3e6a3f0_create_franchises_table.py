@@ -22,11 +22,10 @@ def upgrade() -> None:
     op.create_table(
         'franchise',
         sa.Column('id', sa.Integer, primary_key=True),
-        sa.Column('name', sa.String(30), nullable=False),
-        sa.Column('common_name', sa.String(20), nullable=False),
-        sa.Column('place_name', sa.String(20), nullable=False)
+        sa.Column('fullName', sa.String(30), nullable=False),
+        sa.Column('teamCommonName', sa.String(20), nullable=False),
+        sa.Column('teamPlaceName', sa.String(20), nullable=False)
     )
-
 
 def downgrade() -> None:
     op.drop_table('franchise')

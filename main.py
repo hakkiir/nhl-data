@@ -4,6 +4,10 @@ import sqlalchemy as db
 import argparse
 import endpoint_urls as urls
 
+import data_fetching as df
+import data_transformation as dt
+from data_persistence import DatabaseManager
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--static', '-s', help="run pipelines for static data", type= bool, default= False)
 
@@ -16,20 +20,20 @@ def main() -> int:
     dbUrl = os.getenv('DB_URL')
     engine = db.create_engine(dbUrl)
 
-    # declare static-data pipeline objects
-    franchise = pl.Franchise(urls.FRANCHISE_URL, engine)
+    #env
+    env = os.getenv("PLATFORM")
 
-    # decalre dynamic-data pipeline objects
-    schedule = pl.Schedule(urls.SCHEDULE_URL, engine)
+    # Data Fetching
+    data_fetcher = df.DataFetchFactory.get_fetcher('teams', env)
+    teams_data = data_fetcher.fetch()
 
-    #check static parameter and run static if true
-    if args.static:
-        franchise.run_pipeline()
+    # Data Transformation
+    teams_transformer = dt.DataTransformer(dt.TeamsTransformationStrategy())
+    normalized_teams = teams_transformer.transform(teams_data)
 
-    # run other
-    schedule.run_pipeline()
-
-    #p.run_pipeline()
+    # Data Persistence
+    dbManager = DatabaseManager(engine)
+    dbManager.save_teams_data(normalized_teams)
 
     return 0
 
