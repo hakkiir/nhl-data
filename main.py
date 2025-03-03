@@ -29,8 +29,13 @@ def main() -> int:
     teams_data      = data_fetcher.get_fetcher('teams', env).fetch()
 
     # Data Transformation
-    normalized_franchise    = DataTransformer(FranchiseTransformationStrategy()).transform(franchise_data)
-    normalized_teams        = DataTransformer(TeamsTransformationStrategy()).transform(teams_data)
+    data_transformer = DataTransformer()
+
+    data_transformer.set_strategy(FranchiseTransformationStrategy())
+    normalized_franchise    = data_transformer.transform(franchise_data)
+
+    data_transformer.set_strategy(TeamsTransformationStrategy())
+    normalized_teams        = data_transformer.transform(teams_data)
 
     # Data Persistence
     dbManager = DatabaseManager(engine)

@@ -1,14 +1,16 @@
 import pandas as pd
 from typing import Dict, Any
+from abc import ABC, abstractmethod
 
 
-class DataTransformer:
-    def __init__(self, strategy):
-        self.strategy = strategy
-    
+# Strategy interface    
+class TransformationStrategy(ABC):
+    @abstractmethod
     def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
-        return self.strategy.transform(data)
-    
+        pass
+
+
+# Concrete strategies
 
 class FranchiseTransformationStrategy:
     def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
@@ -55,4 +57,16 @@ def removeNotIncludedKeys(lst: list, keyIter: list) -> list:
         k:v
         for k,v in item.items() if k in keyIter
     })
-    return output    
+    return output 
+
+
+# Context class
+class DataTransformer:
+    def __init__(self, strategy: TransformationStrategy):
+        self._strategy = strategy
+        
+    def set_strategy(self, strategy: TransformationStrategy):
+        self._strategy = strategy
+
+    def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
+        return self.strategy.transform(data)

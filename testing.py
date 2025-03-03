@@ -23,7 +23,10 @@ def main() -> int:
     data_fetcher    = df.DataFetchFactory()
     schedule_backfill_generator = data_fetcher.get_fetcher('schedule', env).backfill_generator()
     for x in schedule_backfill_generator:
-        print(x)
+        print("prev:")
+        print(x["previousStartDate"])
+        print("next:")
+        print(x["nextStartDate"])
         print()
         print()
         print("=====================================")
