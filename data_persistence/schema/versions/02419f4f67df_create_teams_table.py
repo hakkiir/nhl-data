@@ -21,13 +21,14 @@ depends_on: Union[str, Sequence[str], None] = None
 def upgrade() -> None:
         op.create_table(
         'teams',
-        sa.Column('id', sa.Integer, primary_key=True),
-        sa.Column('franchiseId', sa.Integer, nullable=False),
-        sa.Column('fullName', sa.String(30), nullable=False),
-        sa.Column('leagueId', sa.Integer),
-        sa.Column('rawTricode', sa.String(3)),
+        sa.Column('team_id', sa.Integer, primary_key=True),
+        sa.Column('franchise_id', sa.Integer, nullable=True),
+        sa.Column('full_name', sa.String(30), nullable=False),
+        sa.Column('league_id', sa.Integer),
+        sa.Column('raw_tricode', sa.String(3)),
         sa.Column('tricode', sa.String(3)),
-        sa.ForeignKeyConstraint(['franchiseId'], ['public.franchise.id'])
+        sa.ForeignKeyConstraint(['franchise_id'], ['public.franchise.franchise_id']),
+        sa.Column('created_at', sa.DateTime, server_default=sa.func.now())
     )
 
 def downgrade() -> None:

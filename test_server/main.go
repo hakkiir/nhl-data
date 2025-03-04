@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-
 	const port = "8080"
 	const filepathRoot = "api/"
 
@@ -14,8 +13,6 @@ func main() {
 
 	fsHandler := http.StripPrefix("/api", http.FileServer(http.Dir(filepathRoot)))
 	mux.Handle("/api/", fsHandler)
-
-	//mux.HandleFunc("GET /api/healthz", handlerHealth)
 
 	srv := http.Server{
 		Addr:    ":" + port,

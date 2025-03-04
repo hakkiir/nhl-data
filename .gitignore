@@ -3,3 +3,4 @@ venv/
 testdata.json
 .env
 testing.py
+*.log
