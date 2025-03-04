@@ -1,6 +1,18 @@
 # data_fetching/__init__.py
+from .data_fetchers import (
+    DataFetcher, 
+    FranchiseDataFetcher, 
+    TeamsDataFetcher, 
+    RosterDataFetcher
+)
+from .schedule_fetcher import ScheduleDataFetcher
+from .fetch_factory import DataFetchFactory
 
-# Tuo automaattisesti TeamsDataFetcher, kun paketti tuodaan
-from .fetch_factory import DataFetchFactory, FranchiseDataFetcher
-
-__all__ = ['DataFetchFactory', 'FranchiseDataFetcher']
+__all__ = [
+    'DataFetcher', 
+    'FranchiseDataFetcher', 
+    'TeamsDataFetcher', 
+    'RosterDataFetcher', 
+    'ScheduleDataFetcher', 
+    'DataFetchFactory'
+]

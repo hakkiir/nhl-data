@@ -2,7 +2,7 @@ import os
 import sqlalchemy as db
 import argparse
 import logging
-from data_fetching import * 
+from data_fetching import *
 from data_transformation import *
 from data_persistence import *
 import time
@@ -14,8 +14,8 @@ parser.add_argument('--static', '-s', help="run pipelines for static data", type
 logger = logging.getLogger(__name__)
 
 
-def schedule_backfiller(data_fetcher: DataFetchFactory, data_transformer: DataTransformer, dbManager: DatabaseManager, env: str):
-    schedule_backfill_generator = data_fetcher.get_fetcher('schedule', env).backfill_generator()
+def schedule_backfiller(data_fetcher: DataFetchFactory, data_transformer: DataTransformer, dbManager: DatabaseManager):
+    schedule_backfill_generator = data_fetcher.get_fetcher('schedule').backfill_generator()
     # backfill 
     data_transformer.set_strategy(ScheduleTransformationStrategy())
     for schedule in schedule_backfill_generator:
@@ -28,7 +28,7 @@ def schedule_backfiller(data_fetcher: DataFetchFactory, data_transformer: DataTr
         except SaveToDatabaseError:
             pass
 
-def roster_filler(data_fetcher: DataFetchFactory, data_transformer: DataTransformer, dbManager: DatabaseManager, env: str):
+def roster_filler(data_fetcher: DataFetchFactory, data_transformer: DataTransformer, dbManager: DatabaseManager):
     teams = dbManager.get_teams_in_season()
     for team in teams:
         tricode = team[1]
@@ -38,7 +38,7 @@ def roster_filler(data_fetcher: DataFetchFactory, data_transformer: DataTransfor
         print("tricode:")
         print(tricode)
         try:
-            roster_data = data_fetcher.get_fetcher('roster', env, team_tricode=tricode).fetch()
+            roster_data = data_fetcher.get_fetcher('roster', team_tricode=tricode).fetch()
             time.sleep(2)
         except KeyError:
             print("exception")
@@ -65,13 +65,10 @@ def main() -> int:
     dbUrl = os.getenv('DB_URL')
     engine = db.create_engine(dbUrl)
 
-    #env
-    env = os.getenv("PLATFORM")
-
     # Data Fetching
     data_fetcher    = DataFetchFactory()
-    franchise_data  = data_fetcher.get_fetcher('franchise', env).fetch()
-    teams_data      = data_fetcher.get_fetcher('teams', env).fetch()
+    franchise_data  = data_fetcher.get_fetcher('franchise').fetch()
+    teams_data      = data_fetcher.get_fetcher('teams').fetch()
     
     
     # Data Transformation
@@ -88,9 +85,9 @@ def main() -> int:
     dbManager = DatabaseManager(engine)
     dbManager.save_franchise_data(normalized_franchise)
     dbManager.save_teams_data(normalized_teams)
-    schedule_backfiller(data_fetcher, data_transformer, dbManager, env)
+    schedule_backfiller(data_fetcher, data_transformer, dbManager)
     
-    roster_filler(data_fetcher, data_transformer, dbManager, env)
+    roster_filler(data_fetcher, data_transformer, dbManager)
 
 if __name__ == '__main__':
     main()
