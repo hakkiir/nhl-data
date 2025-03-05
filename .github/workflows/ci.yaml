@@ -14,5 +14,5 @@ jobs:
       - name: Python Linter
         uses: sunnysid3up/python-linter@master
         with:
-            source: "."
             strict: "medium"
+            mypy-options: "--ignore-missing-imports --show-error-codes"
