@@ -89,7 +89,7 @@ class RosterTransformationStrategy(TransformationStrategy):
 
 
 def removeNotIncludedKeys(df: pd.DataFrame, columnList: list) -> pd.DataFrame:
-    if columnList == None:
+    if columnList is None or len(columnList) == 0:
         return df
     for column in df.columns:
         if column not in columnList:
