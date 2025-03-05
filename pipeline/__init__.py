@@ -19,7 +19,8 @@ from .nhl_data_workflow import (
     create_nhl_franchise_pipeline,
     create_nhl_roster_pipeline,
     create_nhl_schedule_backfill_pipeline,
-    create_nhl_teams_pipeline
+    create_nhl_teams_pipeline,
+    fill_team_rosters
 )
 __all__ = [
     'DataFetcher', 

@@ -4,9 +4,10 @@ import sqlalchemy as db
 import logging
 from pipeline import (
     create_nhl_franchise_pipeline,
-    #create_nhl_roster_pipeline,
+    create_nhl_roster_pipeline,
     create_nhl_schedule_backfill_pipeline,
     create_nhl_teams_pipeline,
+    fill_team_rosters
 )
 
 #parser = argparse.ArgumentParser()
@@ -26,12 +27,12 @@ def main() -> int:
     franchise_wf    = create_nhl_franchise_pipeline(engine)
     teams_wf        = create_nhl_teams_pipeline(engine)
     schedule_wf     = create_nhl_schedule_backfill_pipeline(engine)
-    #roster_wf       = create_nhl_roster_pipeline(engine)
+    roster_wf       = create_nhl_roster_pipeline(engine)
 
     franchise_wf.run()
     teams_wf.run()
     schedule_wf.backfill()
-    #fill_team_rosters(roster_wf)
+    fill_team_rosters(roster_wf)
     
     return 0
 

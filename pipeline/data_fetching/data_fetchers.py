@@ -5,7 +5,7 @@ import logging
 from pipeline.exceptions import APIError
 from os import getenv
 from .endpoints import endpoints
-import json
+import json, time
 
 logger = logging.getLogger(__name__)
 env = getenv("PLATFORM")
@@ -44,15 +44,18 @@ class RosterDataFetcher(DataFetcher):
     def fetch(self, **kwargs) -> Dict[str, Any]:
 
         if "team_tricode" not in kwargs:
-            raise ValueError("need team tricode for url: https://api-web.nhle.com/v1/roster/<team_tricode>/current")
+            raise ValueError(f"need team tricode for url: {endpoints[env]["roster"]}")
+        
         team_tricode = kwargs["team_tricode"]
-        self.endpoint = self.endpoint.replace("<team_tricode>", team_tricode)
+        self.endpoint = endpoints[env]["roster"].replace("<team_tricode>", team_tricode)
         try:
             response = requests.get(self.endpoint, timeout=10)
             response.raise_for_status()  # HTTPError for bad responses
-            with open(f"{team_tricode}.json", 'w+') as outfile:
+            time.sleep(2)
+            with open(f"test_server/api/roster/{team_tricode}.json", 'w+') as outfile:
                 outfile.write(json.dumps(response.json()))
                 outfile.close()
+
             return response.json()
         
         except requests.RequestException as e:
