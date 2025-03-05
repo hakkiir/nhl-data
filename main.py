@@ -2,7 +2,13 @@ import os
 import sqlalchemy as db
 import argparse
 import logging
-from pipeline import *
+from pipeline import (
+    create_nhl_franchise_pipeline,
+    create_nhl_roster_pipeline,
+    create_nhl_schedule_backfill_pipeline,
+    create_nhl_teams_pipeline,
+    NHLDataWorkflow
+)
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--static', '-s', help="run pipelines for static data", type= bool, default= False)
