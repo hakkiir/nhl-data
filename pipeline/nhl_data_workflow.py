@@ -211,6 +211,7 @@ def fill_team_rosters(workflow: NHLDataWorkflow) -> None:
             workflow.fetch(team_tricode=tricode)
             workflow.transform(current_team_id=team_id)
             workflow.load()
+            workflow.reset()
             
             successful_teams.append(tricode)
             workflow.logger.info(f"Successfully processed roster for team {tricode}")

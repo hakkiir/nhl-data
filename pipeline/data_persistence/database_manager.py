@@ -29,19 +29,6 @@ class DatabaseManager:
         finally:
             session.close()
 
-
-    def save_franchise_data(self, df: pd.DataFrame):
-        self.load(df, "franchise")
-    
-    def save_teams_data(self, df: pd.DataFrame):
-        self.load(df, "teams")
-
-    def save_schedule_data(self, df: pd.DataFrame):
-        self.load(df, "schedule")
-    
-    def save_roster_data(self, df: pd.DataFrame):
-        self.load(df, "players")
-
     def get_teams_in_season(self) -> list:
         session = self.Session()
         teams = self._metadata.tables['teams']

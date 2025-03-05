@@ -17,6 +17,6 @@ jobs:
     - uses: actions/setup-python@v2
     - run: pip install ruff
     - run: ruff check --fix .
-    - uses: stefanzweifel/git-auto-commit-action@v4
+    - uses: peter-evans/create-pull-request@v7
       with:
-        commit_message: 'style fixes by ruff'
+        commit-message: 'style fixes by ruff'
