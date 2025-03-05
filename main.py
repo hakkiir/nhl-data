@@ -4,7 +4,7 @@ import sqlalchemy as db
 import logging
 from pipeline import (
     create_nhl_franchise_pipeline,
-    create_nhl_roster_pipeline,
+    #create_nhl_roster_pipeline,
     create_nhl_schedule_backfill_pipeline,
     create_nhl_teams_pipeline,
 )
