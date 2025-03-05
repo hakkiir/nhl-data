@@ -1,7 +1,7 @@
 # repository.py
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import engine, select, Table, MetaData
-from exceptions import SaveToDatabaseError
+from sqlalchemy import engine, select, MetaData
+from pipeline.exceptions import SaveToDatabaseError
 import pandas as pd
 import logging
 import datetime
@@ -15,7 +15,7 @@ class DatabaseManager:
         self._metadata = MetaData()
         self._metadata.reflect(engine)
 
-    def save(self, df: pd.DataFrame, table_name: str):
+    def load(self, df: pd.DataFrame, table_name: str):
         session = self.Session()
         try:
             with self.engine.begin() as conn:
@@ -31,16 +31,16 @@ class DatabaseManager:
 
 
     def save_franchise_data(self, df: pd.DataFrame):
-        self.save(df, "franchise")
+        self.load(df, "franchise")
     
     def save_teams_data(self, df: pd.DataFrame):
-        self.save(df, "teams")
+        self.load(df, "teams")
 
     def save_schedule_data(self, df: pd.DataFrame):
-        self.save(df, "schedule")
+        self.load(df, "schedule")
     
     def save_roster_data(self, df: pd.DataFrame):
-        self.save(df, "players")
+        self.load(df, "players")
 
     def get_teams_in_season(self) -> list:
         session = self.Session()

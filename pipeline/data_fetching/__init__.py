@@ -5,7 +5,7 @@ from .data_fetchers import (
     TeamsDataFetcher, 
     RosterDataFetcher
 )
-from .schedule_fetcher import ScheduleDataFetcher
+from .schedule_fetcher import ScheduleDataFetcher, ScheduleBackfillFetcher
 from .fetch_factory import DataFetchFactory
 
 __all__ = [

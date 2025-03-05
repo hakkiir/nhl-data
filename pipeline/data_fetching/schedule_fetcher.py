@@ -1,9 +1,9 @@
 import logging
 import requests
-from data_fetching.data_fetchers import DataFetcher
+from .data_fetchers import DataFetcher
 import datetime
 from typing import Any
-from exceptions import APIError
+from pipeline.exceptions import APIError
 from .endpoints import endpoints
 from os import getenv
 
@@ -14,6 +14,9 @@ class ScheduleDataFetcher(DataFetcher):
     def __init__(self):
         super().__init__(endpoints[env]["schedule"])
 
+class ScheduleBackfillFetcher(DataFetcher):
+    def __init__(self):
+        super().__init__(endpoints[env]["schedule"])
     def backfill_generator(self, next_date: str = "2024-10-04", end_date: str ="2025-04-17") -> Any:
 
         while datetime.datetime.strptime(next_date, "%Y-%m-%d") < datetime.datetime.strptime(end_date, "%Y-%m-%d"):

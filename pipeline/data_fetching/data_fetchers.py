@@ -2,9 +2,10 @@ import abc
 from typing import Dict, Any
 import requests
 import logging
-from exceptions import APIError
+from pipeline.exceptions import APIError
 from os import getenv
 from .endpoints import endpoints
+import json
 
 logger = logging.getLogger(__name__)
 env = getenv("PLATFORM")
@@ -18,8 +19,10 @@ class DataFetcher(abc.ABC):
         try:
             response = requests.get(self.endpoint, timeout=10)
             response.raise_for_status()  # HTTPError for bad responses
+
             logger.info(f"Successfully fetched data from {self.endpoint}")
             print(f"Successfully fetched data from {self.endpoint}")
+
             return response.json()
         
         except requests.RequestException as e:
@@ -35,7 +38,23 @@ class TeamsDataFetcher(DataFetcher):
         super().__init__(endpoints[env]["teams"])
 
 class RosterDataFetcher(DataFetcher):
-    def __init__(self, team_tricode: str):
-        endpoint = endpoints[env]["roster"].replace("<team_tricode>", team_tricode)
-        super().__init__(endpoint)
+    def __init__(self):
+        super().__init__(endpoints[env]["roster"])
 
+    def fetch(self, **kwargs) -> Dict[str, Any]:
+
+        if "team_tricode" not in kwargs:
+            raise ValueError("need team tricode for url: https://api-web.nhle.com/v1/roster/<team_tricode>/current")
+        team_tricode = kwargs["team_tricode"]
+        self.endpoint = self.endpoint.replace("<team_tricode>", team_tricode)
+        try:
+            response = requests.get(self.endpoint, timeout=10)
+            response.raise_for_status()  # HTTPError for bad responses
+            with open(f"{team_tricode}.json", 'w+') as outfile:
+                outfile.write(json.dumps(response.json()))
+                outfile.close()
+            return response.json()
+        
+        except requests.RequestException as e:
+            logger.error(f"Error fetching {self.endpoint}: {e}")
+            raise APIError(f"API request failed: {e}") from e
