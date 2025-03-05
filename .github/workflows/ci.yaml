@@ -1,18 +1,17 @@
-name: ci
 
-on:
-    push:
-        branches: [main]
+name: Lint and Commit
+on: push
 
 jobs:
-  style:
-    name: Tests
-    runs-on: ubuntu-latest
-
+  lint:
+    runs-on: ubuntu-latest 
     steps:
-      - uses: actions/checkout@v4
-      - name: Python Linter
-        uses: sunnysid3up/python-linter@master
-        with:
-            strict: "medium"
-            mypy-options: "--ignore-missing-imports --show-error-codes"
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+    - run: pip install ruff
+    - run: | 
+        ruff check .
+        ruff fix .
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'style fixes by ruff'
