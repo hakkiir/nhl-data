@@ -1,24 +1,23 @@
 import os
 import sqlalchemy as db
-import argparse
+#import argparse
 import logging
 from pipeline import (
     create_nhl_franchise_pipeline,
     create_nhl_roster_pipeline,
     create_nhl_schedule_backfill_pipeline,
     create_nhl_teams_pipeline,
-    NHLDataWorkflow
 )
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--static', '-s', help="run pipelines for static data", type= bool, default= False)
+#parser = argparse.ArgumentParser()
+#parser.add_argument('--static', '-s', help="run pipelines for static data", type= bool, default= False)
 
 def main() -> int:
 
     #logging 
     logging.basicConfig(filename='nhl_workflow.log', level=logging.INFO)
     #logger.info(f'Started: {datetime.datetime.now()}')
-    args = parser.parse_args()
+    #args = parser.parse_args()
     
     # db url from env and db connection
     dbUrl = os.getenv('DB_URL')
@@ -27,7 +26,7 @@ def main() -> int:
     franchise_wf    = create_nhl_franchise_pipeline(engine)
     teams_wf        = create_nhl_teams_pipeline(engine)
     schedule_wf     = create_nhl_schedule_backfill_pipeline(engine)
-    roster_wf       = create_nhl_roster_pipeline(engine)
+    #roster_wf       = create_nhl_roster_pipeline(engine)
 
     franchise_wf.run()
     teams_wf.run()
