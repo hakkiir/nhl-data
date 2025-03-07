@@ -1,6 +1,6 @@
 # repository.py
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy import engine, select, MetaData
+from sqlalchemy import engine, select, MetaData, text
 from pipeline.exceptions import SaveToDatabaseError
 import pandas as pd
 import logging
@@ -45,6 +45,27 @@ class DatabaseManager:
             session.close()
         return output
     
+    def run_sql_file(self, file_name: str):
+        with self.engine.connect() as con:
+            with open(f"pipeline/data_persistence/sql/{file_name}.sql") as file:
+                query = text(file.read())
+                con.execute(query)
+    
+    def get_team_ids_from_names(self) -> list:
+        session = self.Session()
+        teams = self._metadata.tables['teams']
+        stmt = select(teams.c.team_id, teams.c.raw_tricode)
+        output = []
+        try:
+            with self.engine.connect() as conn:
+                for row in conn.execute(stmt):
+                    output.append(row)
+        except Exception as e:
+            print(f">>> Something went wrong while retrieving from db!\n:{e}")
+        finally:
+            session.close()
+        return output
+    
 def postgres_upsert(table, conn, keys, data_iter):
     from sqlalchemy.dialects.postgresql import insert
 
@@ -52,7 +73,7 @@ def postgres_upsert(table, conn, keys, data_iter):
 
     insert_statement = insert(table.table).values(data)
     upsert_statement = insert_statement.on_conflict_do_update(
-        constraint=f"{table.table.name}_pkey",
+        constraint=f"{table.table.name}_id",
         set_={c.key: c for c in insert_statement.excluded},
     )
     conn.execute(upsert_statement)

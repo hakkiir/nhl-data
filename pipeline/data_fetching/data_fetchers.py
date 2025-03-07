@@ -52,10 +52,6 @@ class RosterDataFetcher(DataFetcher):
         try:
             response = requests.get(self.endpoint, timeout=10)
             response.raise_for_status()  # HTTPError for bad responses
-            time.sleep(2)
-            with open(f"test_server/api/roster/{team_tricode}.json", 'w+') as outfile:
-                outfile.write(json.dumps(response.json()))
-                outfile.close()
 
             return response.json()
         

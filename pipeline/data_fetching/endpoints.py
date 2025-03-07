@@ -4,7 +4,7 @@ endpoints = {
             "franchise"         : "http://localhost:8080/api/franchise.json",
             "schedule"          : "http://localhost:8080/api/schedule.json",
             "teams"             : "http://localhost:8080/api/teams.json",
-            "roster"            : "https://api-web.nhle.com/v1/roster/<team_tricode>/current",
+            "roster"            : "http://localhost:8080/api/roster/<team_tricode>.json",
         },
     "prd":
         {
