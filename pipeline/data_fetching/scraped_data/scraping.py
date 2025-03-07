@@ -1,5 +1,4 @@
 import pandas as pd
-import time
 
 url = "https://en.wikipedia.org/wiki/National_Hockey_League#List_of_teams"
 tables = pd.read_html(url)
