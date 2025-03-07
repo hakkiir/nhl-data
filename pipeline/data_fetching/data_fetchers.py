@@ -5,8 +5,6 @@ import logging
 from pipeline.exceptions import APIError
 from os import getenv
 from .endpoints import endpoints
-import json
-import time
 
 logger = logging.getLogger(__name__)
 env = getenv("PLATFORM")
