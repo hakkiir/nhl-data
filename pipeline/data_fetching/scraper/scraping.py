@@ -1,6 +1,5 @@
 import pandas as pd
 from typing import Dict
-from numpy import select
 
 def Scrape_team_to_division_mapping() -> Dict:
     '''
