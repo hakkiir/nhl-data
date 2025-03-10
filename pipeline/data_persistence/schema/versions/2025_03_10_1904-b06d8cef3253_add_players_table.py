@@ -1,8 +1,8 @@
 """add players table
 
-Revision ID: 2c140dc6ffcd
-Revises: f879b710bd2a
-Create Date: 2025-03-04 17:09:04.649661
+Revision ID: b06d8cef3253
+Revises: 3d5bf9567c40
+Create Date: 2025-03-10 19:04:11.444098
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '2c140dc6ffcd'
-down_revision: Union[str, None] = 'f879b710bd2a'
+revision: str = 'b06d8cef3253'
+down_revision: Union[str, None] = '3d5bf9567c40'
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
@@ -36,36 +36,9 @@ def upgrade() -> None:
         sa.Column('birth_state_province', sa.String(20)),
         sa.Column('headshot_url', sa.String(100)),
         sa.Column('created_at', sa.DateTime, server_default=sa.func.now()),
+        sa.Column('updated_at', sa.DateTime, server_default=sa.func.now()),
         sa.ForeignKeyConstraint(['current_team_id'], ['public.teams.team_id'])
         )
 
 def downgrade() -> None:
-    pass
-
-'''
-        {
-            "id": 8480980,
-            "headshot": "https://assets.nhle.com/mugs/nhl/20242025/TOR/8480980.png",
-            "firstName": {
-                "default": "Connor"
-            },
-            "lastName": {
-                "default": "Dewar"
-            },
-            "sweaterNumber": 24,
-            "positionCode": "C",
-            "shootsCatches": "L",
-            "heightInInches": 70,
-            "weightInPounds": 192,
-            "heightInCentimeters": 178,
-            "weightInKilograms": 87,
-            "birthDate": "1999-06-26",
-            "birthCity": {
-                "default": "The Pas"
-            },
-            "birthCountry": "CAN",
-            "birthStateProvince": {
-                "default": "MB"
-            }
-        }
-'''
+    op.drop_table('players')

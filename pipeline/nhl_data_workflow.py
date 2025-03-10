@@ -2,7 +2,7 @@ from typing import Optional, Dict, Any
 import logging
 from sqlalchemy.engine import Engine
 from pandas import DataFrame
-from .data_fetching import DataFetchFactory, DataFetcher
+from .data_fetching import DataFetchFactory, DataFetcher, scraping
 from .data_transformation import (
     DataTransformer, 
     ScheduleTransformationStrategy,
@@ -222,3 +222,4 @@ def fill_team_rosters(workflow: NHLDataWorkflow) -> None:
     
     # Summary logging
     workflow.logger.info(f"Roster fill completed. Successful: {len(successful_teams)}, Failed: {len(failed_teams)}")
+

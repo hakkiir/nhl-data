@@ -1,10 +1,11 @@
 # repository.py
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy import engine, select, MetaData, text
 from pipeline.exceptions import SaveToDatabaseError
 import pandas as pd
 import logging
 import datetime
+
 
 logger = logging.getLogger(__name__)
 
@@ -73,7 +74,29 @@ def postgres_upsert(table, conn, keys, data_iter):
 
     insert_statement = insert(table.table).values(data)
     upsert_statement = insert_statement.on_conflict_do_update(
-        constraint=f"{table.table.name}_id",
+        constraint=f"{table.table.name}_pkey",
         set_={c.key: c for c in insert_statement.excluded},
     )
     conn.execute(upsert_statement)
+
+def insert_divisions(engine):
+    try:
+        with Session(engine) as session:
+            data = [
+                {'division_id': 1, 'division_name': 'Central', 'division_abbrev': 'C', 'conference_name': 'Western', 'conference_abbrev': 'W'},
+                {'division_id': 2, 'division_name': 'Pacific', 'division_abbrev': 'P', 'conference_name': 'Western', 'conference_abbrev': 'W'},
+                {'division_id': 3, 'division_name': 'Metropolitan', 'division_abbrev': 'M', 'conference_name': 'Eastern', 'conference_abbrev': 'E'},
+                {'division_id': 4, 'division_name': 'Atlantic', 'division_abbrev': 'A', 'conference_name': 'Eastern', 'conference_abbrev': 'E'}
+            ]
+
+
+            statement = text("""INSERT INTO divisions(division_name, division_abbrev, conference_name, conference_abbrev)
+                                VALUES(:division_name, :division_abbrev, :conference_name, :conference_abbrev)""")
+
+            for line in data:
+                session.execute(statement, line)
+            session.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        raise SaveToDatabaseError(e) from e
+

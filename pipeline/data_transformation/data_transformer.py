@@ -1,6 +1,7 @@
 import pandas as pd
 from typing import Dict, Any
 from abc import ABC, abstractmethod
+from pipeline.data_fetching import scraping
 
 # Strategy interface    
 class TransformationStrategy(ABC):
@@ -14,18 +15,22 @@ class FranchiseTransformationStrategy(TransformationStrategy):
     def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
         df = pd.json_normalize(data["data"])
         df.rename(
-            columns={"id": "franchise_id", "fullName": "full_name", "teamCommonName" : "team_common_name", "teamPlaceName" : "team_place_name"},
+            columns={"id": "franchise_id", "fullName": "franchise_name", "teamCommonName" : "team_common_name", "teamPlaceName" : "team_place_name"},
             inplace=True
             )
         return df
     
-class TeamsTransformationStrategy(TransformationStrategy):
+class TeamsTransformationStrategy(TransformationStrategy):  
+    # do something with the result..
     def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
+
         df = pd.json_normalize(data["data"])
         df.rename(
-            columns={"id": "team_id", "franchiseId": "franchise_id", "fullName": "full_name", "leagueId": "league_id", "rawTricode": "raw_tricode", "triCode": "tricode"},
+            columns={"id": "team_id", "franchiseId": "franchise_id", "fullName": "team_name", "leagueId": "league_id", "rawTricode": "raw_tricode", "triCode": "tricode"},
             inplace=True
             )
+        divisions = scraping.Scrape_team_to_division_mapping()
+        df['division_id'] = [divisions[name].item() if name in divisions else None for name in df['team_name']]
         return df
     
 class ScheduleTransformationStrategy(TransformationStrategy):

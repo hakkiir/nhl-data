@@ -8,15 +8,11 @@ from pipeline import (
     create_nhl_schedule_backfill_pipeline,
     create_nhl_teams_pipeline,
     fill_team_rosters,
-    DatabaseManager
+    insert_divisions
 )
 
 #parser = argparse.ArgumentParser()
 #parser.add_argument('--static', '-s', help="run pipelines for static data", type= bool, default= False)
-
-def fill_divisions_table(engine: db.Engine):
-    db = DatabaseManager(engine)
-    db.run_sql_file("insert_divisions")
 
 def main() -> int:
 
@@ -34,11 +30,11 @@ def main() -> int:
     schedule_wf     = create_nhl_schedule_backfill_pipeline(engine)
     roster_wf       = create_nhl_roster_pipeline(engine)
 
+    insert_divisions(engine)
     franchise_wf.run()
     teams_wf.run()
     schedule_wf.backfill()
     fill_team_rosters(roster_wf)
-    fill_divisions_table(engine)
 
     return 0
 

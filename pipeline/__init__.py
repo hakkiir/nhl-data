@@ -13,7 +13,8 @@ from .data_transformation import (
     ScheduleTransformationStrategy,
     FranchiseTransformationStrategy
 )
-from .data_persistence import DatabaseManager
+from .data_persistence import DatabaseManager, insert_divisions
+
 from .nhl_data_workflow import (
     NHLDataWorkflow,
     create_nhl_franchise_pipeline,
@@ -42,5 +43,6 @@ __all__ = [
     'create_nhl_schedule_backfill_pipeline',
     'fill_team_rosters',
     'exceptions',
-    'ScheduleBackfillFetcher'
+    'ScheduleBackfillFetcher',
+    'insert_divisions',
 ]

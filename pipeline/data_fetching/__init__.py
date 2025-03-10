@@ -7,6 +7,7 @@ from .data_fetchers import (
 )
 from .schedule_fetcher import ScheduleDataFetcher, ScheduleBackfillFetcher
 from .fetch_factory import DataFetchFactory
+from .scraped_data import scraping
 
 __all__ = [
     'DataFetcher', 
@@ -16,4 +17,5 @@ __all__ = [
     'ScheduleDataFetcher', 
     'DataFetchFactory',
     'ScheduleBackfillFetcher',
+    'scraping'
 ]
