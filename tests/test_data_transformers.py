@@ -1,8 +1,4 @@
 import unittest
-from unittest.mock import Mock, patch
-import pandas as pd
-import requests
-from sqlalchemy import create_engine
 import pipeline as pl
 
 class TestTransformationStrategies(unittest.TestCase):

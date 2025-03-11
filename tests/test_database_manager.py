@@ -1,10 +1,8 @@
 import unittest
-from unittest.mock import Mock, patch
+from unittest.mock import patch
 import pandas as pd
-import requests
 from sqlalchemy import create_engine
 import pipeline as pl
-import datetime 
 class TestDatabaseManager(unittest.TestCase):
     def setUp(self):
         # Create a test in-memory SQLite database
