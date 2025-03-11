@@ -3,6 +3,7 @@ from .data_fetchers import (
     TeamsDataFetcher, 
     FranchiseDataFetcher, 
     RosterDataFetcher,
+    StandingsDataFetcher
 )
 from .schedule_fetcher import ScheduleDataFetcher, ScheduleBackfillFetcher
 
@@ -27,6 +28,7 @@ class DataFetchFactory:
             'roster': RosterDataFetcher,
             'schedule': ScheduleDataFetcher,
             'schedule_backfill': ScheduleBackfillFetcher,
+            'current_standings': StandingsDataFetcher
         }
         
         try:

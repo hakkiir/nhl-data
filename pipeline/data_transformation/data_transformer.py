@@ -2,6 +2,7 @@ import pandas as pd
 from typing import Dict, Any
 from abc import ABC, abstractmethod
 from pipeline.data_fetching import scraping
+from pipeline.data_persistence import DatabaseManager
 
 # Strategy interface    
 class TransformationStrategy(ABC):
@@ -11,8 +12,101 @@ class TransformationStrategy(ABC):
 
 # Concrete strategies
 
+class StandingsTransformationStrategy(TransformationStrategy):
+    def transform(self, data: Dict[str, Any], **kwargs) -> pd.DataFrame :
+        fields = [
+        'division_id',
+        'team_id',
+        'standing_id', 
+        'date',
+        'conferenceSequence',
+        'divisionSequence',
+        'gamesPlayed',
+        'goalDifferential',
+        'goalAgainst',
+        'goalFor',
+        'pointPctg',
+        'winPctg',
+        'homeGamesPlayed',
+        'homeGoalDifferential',
+        'homeGoalsAgainst',
+        'homeGoalsFor',
+        'homeLosses',
+        'homeOtLosses',
+        'homePoints',
+        'homeWins',
+        'homeRegulationWins',
+        'roadGamesPlayed',
+        'roadGoalDifferential',
+        'roadGoalsAgainst',
+        'roadGoalsFor',
+        'roadLosses',
+        'roadOtLosses',
+        'roadPoints',
+        'roadWins',
+        'roadRegulationWins',
+        'streakCode',
+        'streakCount',
+        'wildcardSequence',
+        'wins',
+        'losses',
+        'points'
+        ]
+
+        databaseManager = kwargs["databasemanager"]
+        timeStamp = data["standingsDateTimeUtc"]
+        df = pd.json_normalize(data["standings"])
+
+        teams = databaseManager.get_teams_in_season()
+        team_mapping = {team[1]: (team[0], team[2]) for team in teams}
+
+        # Apply mapping for division_id and team_id
+        df["division_id"] = df["teamAbbrev.default"].map(lambda abb: team_mapping.get(abb, (None, None))[1])
+        df["team_id"] = df["teamAbbrev.default"].map(lambda abb: team_mapping.get(abb, (None, None))[0])
+
+        print("standing_id:")
+        print(df["divisionAbbrev"]+df["divisionSequence"].astype(str))
+        df["standing_id"] = (df["divisionAbbrev"]+df["divisionSequence"].astype(str)).values
+        df["date"] = timeStamp
+        print(df)
+        filteredDf = removeNotIncludedKeys(df, fields)
+        filteredDf.rename(
+            columns={"date": "standings_datetime", 
+                     "conferenceSequence": "conference_seq",
+                     "divisionSequence": "division_seq",
+                     "gamesPlayed": "games_played",
+                     "goalDifferential": "goal_diff",
+                     "goalAgainst": "goals_against",
+                     "goalFor": "goals_for",
+                     "pointPctg": "points_pctg",
+                     "winPctg": "win_pctg",
+                     "homeGamesPlayed": "home_games_played",
+                     "homeGoalDifferential": "home_goals_diff",
+                     "homeGoalsAgainst": "home_goals_against",
+                     "homeGoalsFor": "home_goals_for",
+                     "homeLosses": "home_losses",
+                     "homeOtLosses": "home_ot_losses",
+                     "homePoints": "home_points",
+                     "homeWins": "home_total_wins",
+                     "homeRegulationWins": "home_reg_wins",
+                     "roadGamesPlayed": "road_games_played",
+                     "roadGoalDifferential": "road_goals_diff",
+                     "roadGoalsAgainst": "road_goals_against",
+                     "roadGoalsFor": "road_goals_for",
+                     "roadLosses": "road_losses",
+                     "roadOtLosses": "road_ot_losses",
+                     "roadPoints": "road_points",
+                     "roadWins": "road_total_wins",
+                     "roadRegulationWins": "road_reg_wins",
+                     "streakCode": "streak_code",
+                     "streakCount": "streak_count",
+                     "wildcardSequence": "wildcard_seq"
+                     },inplace=True)
+        print(filteredDf.head)
+        return filteredDf
+
 class FranchiseTransformationStrategy(TransformationStrategy):
-    def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
+    def transform(self, data: Dict[str, Any], **kwargs) -> pd.DataFrame :
         df = pd.json_normalize(data["data"])
         df.rename(
             columns={"id": "franchise_id", "fullName": "franchise_name", "teamCommonName" : "team_common_name", "teamPlaceName" : "team_place_name"},
@@ -22,19 +116,32 @@ class FranchiseTransformationStrategy(TransformationStrategy):
     
 class TeamsTransformationStrategy(TransformationStrategy):  
     # do something with the result..
-    def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
+    def transform(self, data: Dict[str, Any], **kwargs) -> pd.DataFrame :
+
+        # get divisions ids
+        divisions = scraping.Scrape_team_to_division_mapping()
+        divisions.rename(columns={"Team": "team_name"}, inplace=True)
+        divisions['team_name'] = divisions['team_name'].replace('Montreal Canadiens', 'Montréal Canadiens')
+        mapping = {
+            'Central': 1,
+            'Pacific': 2,
+            'Metropolitan': 3,
+            'Atlantic': 4
+            }     
+        divisions['division_id'] = divisions['Division'].map(mapping).fillna(0).astype(int) 
 
         df = pd.json_normalize(data["data"])
         df.rename(
             columns={"id": "team_id", "franchiseId": "franchise_id", "fullName": "team_name", "leagueId": "league_id", "rawTricode": "raw_tricode", "triCode": "tricode"},
             inplace=True
             )
-        divisions = scraping.Scrape_team_to_division_mapping()
-        df['division_id'] = [divisions[name].item() if name in divisions else None for name in df['team_name']]
-        return df
+        
+        df_merged = df.merge(divisions[['team_name', 'division_id']], on='team_name', how='left')
+    
+        return df_merged
     
 class ScheduleTransformationStrategy(TransformationStrategy):
-    def transform(self, data: Dict[str, Any]) -> pd.DataFrame :
+    def transform(self, data: Dict[str, Any], **kwargs) -> pd.DataFrame :
         fields = ['id', 
                 'season', 
                 'gameType', 

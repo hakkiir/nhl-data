@@ -34,7 +34,7 @@ class DatabaseManager:
         session = self.Session()
         teams = self._metadata.tables['teams']
         schedule = self._metadata.tables['schedule']
-        stmt = select(teams.c.team_id, teams.c.raw_tricode).where(teams.c.team_id.in_(select(schedule.c.away_team_id).group_by(schedule.c.away_team_id)))
+        stmt = select(teams.c.team_id, teams.c.raw_tricode, teams.c.division_id).where(teams.c.team_id.in_(select(schedule.c.away_team_id).group_by(schedule.c.away_team_id)))
         output = []
         try:
             with self.engine.connect() as conn:
@@ -55,7 +55,7 @@ class DatabaseManager:
     def get_team_ids_from_names(self) -> list:
         session = self.Session()
         teams = self._metadata.tables['teams']
-        stmt = select(teams.c.team_id, teams.c.raw_tricode)
+        stmt = select(teams.c.team_id, teams.c.raw_tricode, teams.c.division_id)
         output = []
         try:
             with self.engine.connect() as conn:

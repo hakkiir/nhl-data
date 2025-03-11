@@ -2,13 +2,15 @@ from typing import Optional, Dict, Any
 import logging
 from sqlalchemy.engine import Engine
 from pandas import DataFrame
-from .data_fetching import DataFetchFactory, DataFetcher, scraping
+from .data_fetching import DataFetchFactory, DataFetcher
 from .data_transformation import (
     DataTransformer, 
     ScheduleTransformationStrategy,
     TeamsTransformationStrategy,
     RosterTransformationStrategy,
-    FranchiseTransformationStrategy)
+    FranchiseTransformationStrategy,
+    StandingsTransformationStrategy
+    )
 from .data_persistence import DatabaseManager
 from pipeline.exceptions import SaveToDatabaseError
 
@@ -76,7 +78,7 @@ class NHLDataWorkflow():
             self.logger.error(f"Data backfill failed: {e}")
             raise
 
-    def transform(self, **kwargs) -> DataFrame:
+    def transform(self,**kwargs) -> DataFrame:
         """
         Transform raw data using the associated transformer.
         :return: Transformed data
@@ -115,6 +117,7 @@ class NHLDataWorkflow():
             raise
     
     def run(self):
+
         """
         Execute the entire pipeline: fetch -> transform -> load.
         
@@ -123,7 +126,7 @@ class NHLDataWorkflow():
         try:
             self.logger.info("Starting full pipeline execution")
             self.fetch()
-            self.transform()
+            self.transform(databasemanager=self.database_manager)
             return self.load()
         except Exception as e:
             self.logger.error(f"Pipeline execution failed: {e}")
@@ -136,6 +139,37 @@ class NHLDataWorkflow():
         self.raw_data = None
         self.transformed_data = None
         self.logger.info("Pipeline state reset")
+
+    def fill_team_rosters(self) -> None:
+        """
+        function to fill rosters for all teams in the current season.
+
+        """
+        teams = self.database_manager.get_teams_in_season()
+        print(teams)
+        # Track processing results
+        successful_teams = []
+        failed_teams = []
+        
+        for team in teams:
+            team_id, tricode = team[0], team[1]
+            
+            try:
+                print(f"fetching {tricode}")
+                self.fetch(team_tricode=tricode)
+                self.transform(current_team_id=team_id)
+                self.load()
+                self.reset()
+                
+                successful_teams.append(tricode)
+                self.logger.info(f"Successfully processed roster for team {tricode}")
+            
+            except Exception as e:
+                self.logger.error(f"Failed to process roster for team {tricode}: {e}")
+                failed_teams.append((tricode, str(e)))
+        
+        # Summary logging
+        self.logger.info(f"Roster fill completed. Successful: {len(successful_teams)}, Failed: {len(failed_teams)}")
 
 
 # Concrete pipelines
@@ -191,35 +225,15 @@ def create_nhl_schedule_backfill_pipeline(engine: Engine) -> NHLDataWorkflow:
         name="NHL_Schedule_Pipeline",
     )
 
-
-def fill_team_rosters(workflow: NHLDataWorkflow) -> None:
-    """
-    Utility function to fill rosters for all teams in the current season.
-
-    """
-    teams = workflow.database_manager.get_teams_in_season()
-    print(teams)
-    # Track processing results
-    successful_teams = []
-    failed_teams = []
-    
-    for team in teams:
-        team_id, tricode = team[0], team[1]
-        
-        try:
-            print(f"fetching {tricode}")
-            workflow.fetch(team_tricode=tricode)
-            workflow.transform(current_team_id=team_id)
-            workflow.load()
-            workflow.reset()
-            
-            successful_teams.append(tricode)
-            workflow.logger.info(f"Successfully processed roster for team {tricode}")
-        
-        except Exception as e:
-            workflow.logger.error(f"Failed to process roster for team {tricode}: {e}")
-            failed_teams.append((tricode, str(e)))
-    
-    # Summary logging
-    workflow.logger.info(f"Roster fill completed. Successful: {len(successful_teams)}, Failed: {len(failed_teams)}")
-
+def create_nhl_current_standings_pipeline(engine: Engine) -> NHLDataWorkflow:
+    fetcher = DataFetchFactory.get_fetcher('current_standings')
+    transformer = DataTransformer(strategy=StandingsTransformationStrategy())
+    db_manager = DatabaseManager(engine)
+   
+    return NHLDataWorkflow(
+        fetcher=fetcher,
+        transformer=transformer,
+        database_manager=db_manager,
+        table_name='current_standings',
+        name="NHL_Standings_Pipeline",
+    )

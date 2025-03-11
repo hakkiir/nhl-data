@@ -5,6 +5,7 @@ endpoints = {
             "schedule"          : "http://localhost:8080/api/schedule.json",
             "teams"             : "http://localhost:8080/api/teams.json",
             "roster"            : "http://localhost:8080/api/roster/<team_tricode>.json",
+            "standings"         : "http://localhost:8080/api/standings.json",
         },
     "prd":
         {

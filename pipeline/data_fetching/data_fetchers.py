@@ -5,8 +5,6 @@ import logging
 from pipeline.exceptions import APIError
 from os import getenv
 from .endpoints import endpoints
-import json
-import time
 
 logger = logging.getLogger(__name__)
 env = getenv("PLATFORM")
@@ -38,6 +36,10 @@ class TeamsDataFetcher(DataFetcher):
     def __init__(self):
         super().__init__(endpoints[env]["teams"])
 
+class StandingsDataFetcher(DataFetcher):
+    def __init__(self):
+        super().__init__(endpoints[env]["standings"])
+
 class RosterDataFetcher(DataFetcher):
     def __init__(self):
         super().__init__(endpoints[env]["roster"])
@@ -52,7 +54,6 @@ class RosterDataFetcher(DataFetcher):
         try:
             response = requests.get(self.endpoint, timeout=10)
             response.raise_for_status()  # HTTPError for bad responses
-
             return response.json()
         
         except requests.RequestException as e:

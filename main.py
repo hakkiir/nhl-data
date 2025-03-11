@@ -7,8 +7,8 @@ from pipeline import (
     create_nhl_roster_pipeline,
     create_nhl_schedule_backfill_pipeline,
     create_nhl_teams_pipeline,
-    fill_team_rosters,
-    insert_divisions
+    insert_divisions,
+    create_nhl_current_standings_pipeline
 )
 
 #parser = argparse.ArgumentParser()
@@ -29,12 +29,14 @@ def main() -> int:
     teams_wf        = create_nhl_teams_pipeline(engine)
     schedule_wf     = create_nhl_schedule_backfill_pipeline(engine)
     roster_wf       = create_nhl_roster_pipeline(engine)
+    standings_wf    = create_nhl_current_standings_pipeline(engine)
 
-    insert_divisions(engine)
+    #insert_divisions(engine)
     franchise_wf.run()
     teams_wf.run()
     schedule_wf.backfill()
-    fill_team_rosters(roster_wf)
+    roster_wf.fill_team_rosters()
+    standings_wf.run()
 
     return 0
 

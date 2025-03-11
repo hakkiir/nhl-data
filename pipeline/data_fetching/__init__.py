@@ -3,11 +3,12 @@ from .data_fetchers import (
     DataFetcher, 
     FranchiseDataFetcher, 
     TeamsDataFetcher, 
-    RosterDataFetcher
+    RosterDataFetcher,
+    StandingsDataFetcher
 )
 from .schedule_fetcher import ScheduleDataFetcher, ScheduleBackfillFetcher
 from .fetch_factory import DataFetchFactory
-from .scraped_data import scraping
+from .scraper import scraping
 
 __all__ = [
     'DataFetcher', 
@@ -17,5 +18,6 @@ __all__ = [
     'ScheduleDataFetcher', 
     'DataFetchFactory',
     'ScheduleBackfillFetcher',
-    'scraping'
+    'scraping',
+    'StandingsDataFetcher'
 ]
