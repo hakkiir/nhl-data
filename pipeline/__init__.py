@@ -8,10 +8,10 @@ from .nhl_data_workflow import (
 )
 
 __all__ = [
-'create_nhl_franchise_pipeline,'
-'create_nhl_roster_pipeline,'
-'create_nhl_schedule_backfill_pipeline,'
-'create_nhl_teams_pipeline,'
+'create_nhl_franchise_pipeline',
+'create_nhl_roster_pipeline',
+'create_nhl_schedule_backfill_pipeline',
+'create_nhl_teams_pipeline',
 'create_nhl_current_standings_pipeline',
 'insert_divisions'
 ]
