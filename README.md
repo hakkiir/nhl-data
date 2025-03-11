@@ -5,12 +5,11 @@ Python data pipeline to fetch data from NHL API, normalize it and store to datab
 ## Local development requirements
 
 - Python 3.9 
-Setup [Python virtualenv](https://pypi.org/project/virtualenv/)
-activate virtual environment
-```bash
-source <venv-name>/bin/activate
-```
-install dependencies 
+- Setup [Python virtualenv](https://pypi.org/project/virtualenv/)
+- activate virtual environment:
+- ```bash source <venv-name>/bin/activate ```
+
+Install dependencies 
 ```bash
 pip install -r requirements.txt
 ```
