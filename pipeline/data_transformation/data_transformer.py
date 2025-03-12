@@ -2,7 +2,6 @@ import pandas as pd
 from typing import Dict, Any
 from abc import ABC, abstractmethod
 from pipeline.data_fetching import scraping
-from pipeline.data_persistence import DatabaseManager
 
 # Strategy interface    
 class TransformationStrategy(ABC):
