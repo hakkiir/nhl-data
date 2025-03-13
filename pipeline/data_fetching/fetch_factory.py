@@ -15,10 +15,7 @@ class DataFetchFactory:
     ) -> DataFetcher:
         """
         Create and return the appropriate data fetcher.
-        
         :param data_type: Type of data to fetch
-        :param endpoints: Dictionary of endpoints
-        :param kwargs: Additional arguments for specific fetchers
         :return: Appropriate DataFetcher instance
         :raises ValueError: If an unknown data type is requested
         """
