@@ -9,7 +9,7 @@ Go CLI tool to show current standings etc..
 - Python 3.9 
 - Setup [Python virtualenv](https://pypi.org/project/virtualenv/)
 - activate virtual environment:
-    -  > <venv-name>/bin/activate ```
+    -  > \<venv-name\>/bin/activate
 
 Install dependencies 
 ```bash
