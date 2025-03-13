@@ -17,6 +17,6 @@ pip install -r requirements.txt
 ```
 
 Install [PostgreSQL](https://www.postgresql.org/download/)
-Create database
+
 
 ... to be continued
