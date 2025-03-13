@@ -7,16 +7,31 @@ Go CLI tool to show current standings etc..
 ## Local development requirements
 
 - Python 3.9 
+- Latest [Go toolchain](https://golang.org/dl/) installed
+- [PostgreSQL](https://www.postgresql.org/download/)
+
+## Getting started
 - Setup [Python virtualenv](https://pypi.org/project/virtualenv/)
 - activate virtual environment:
-    -  > \<venv-name\>/bin/activate
+    -  > source \<venv-name\>/bin/activate
 
 Install dependencies 
 ```bash
 pip install -r requirements.txt
 ```
 
-Install [PostgreSQL](https://www.postgresql.org/download/)
+Add DB_URL environment variable in your python virtual env
+```bash
+nano <venv-name\>/bin/activate
+.
+.
+.add database connection string to the end of the file:
+export DB_URL="Your connection string here"
+```
 
+Set up database schema
+```bash
+alembic upgrade head
+```
 
-... to be continued
+running main.py should now fill tables with normalized data
