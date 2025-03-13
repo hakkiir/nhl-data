@@ -1,6 +1,8 @@
 # NHL API pipeline
 
-Python data pipeline to fetch data from NHL API, normalize it and store to database
+Building Python data pipeline to fetch data from NHL API, normalize it and store to database
+
+Go CLI tool to show current standings etc..
 
 ## Local development requirements
 
