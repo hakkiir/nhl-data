@@ -21,11 +21,12 @@ pip install -r requirements.txt
 ```
 
 Add DB_URL environment variable in your python virtual env
+1. Open venv `activate` script
 ```bash
-nano <venv-name\>/bin/activate
-.
-.
-.add database connection string to the end of the file:
+nano <venv-name>/bin/activate
+```
+2. Add database connection string to the end of the file:
+```bash
 export DB_URL="Your connection string here"
 ```
 
