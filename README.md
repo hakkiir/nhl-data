@@ -15,10 +15,14 @@ Go CLI tool to show current standings etc..
 - activate virtual environment:
     -  > source \<venv-name\>/bin/activate
 
+
+
 Install dependencies 
 ```bash
 pip install -r requirements.txt
 ```
+
+
 
 Add DB_URL environment variable in your python virtual env
 1. Open venv `activate` script
@@ -30,9 +34,12 @@ nano <venv-name>/bin/activate
 export DB_URL="Your connection string here"
 ```
 
+
+
 Set up database schema
 ```bash
 alembic upgrade head
 ```
+
 
 running main.py should now fill tables with normalized data

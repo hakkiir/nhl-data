@@ -49,7 +49,11 @@ class StandingsTransformationStrategy(TransformationStrategy):
         'wildcardSequence',
         'wins',
         'losses',
-        'points'
+        'points',
+        'otLosses',
+        'l10Losses',
+        'l10Wins',
+        'l10OtLosses'
         ]
 
         databaseManager = kwargs["databasemanager"]
@@ -70,37 +74,41 @@ class StandingsTransformationStrategy(TransformationStrategy):
         print(df)
         filteredDf = removeNotIncludedKeys(df, fields)
         filteredDf.rename(
-            columns={"date": "standings_datetime", 
-                     "conferenceSequence": "conference_seq",
-                     "divisionSequence": "division_seq",
-                     "gamesPlayed": "games_played",
-                     "goalDifferential": "goal_diff",
-                     "goalAgainst": "goals_against",
-                     "goalFor": "goals_for",
-                     "pointPctg": "points_pctg",
-                     "winPctg": "win_pctg",
-                     "homeGamesPlayed": "home_games_played",
-                     "homeGoalDifferential": "home_goals_diff",
-                     "homeGoalsAgainst": "home_goals_against",
-                     "homeGoalsFor": "home_goals_for",
-                     "homeLosses": "home_losses",
-                     "homeOtLosses": "home_ot_losses",
-                     "homePoints": "home_points",
-                     "homeWins": "home_total_wins",
-                     "homeRegulationWins": "home_reg_wins",
-                     "roadGamesPlayed": "road_games_played",
-                     "roadGoalDifferential": "road_goals_diff",
-                     "roadGoalsAgainst": "road_goals_against",
-                     "roadGoalsFor": "road_goals_for",
-                     "roadLosses": "road_losses",
-                     "roadOtLosses": "road_ot_losses",
-                     "roadPoints": "road_points",
-                     "roadWins": "road_total_wins",
-                     "roadRegulationWins": "road_reg_wins",
-                     "streakCode": "streak_code",
-                     "streakCount": "streak_count",
-                     "wildcardSequence": "wildcard_seq"
-                     },inplace=True)
+            columns={"date"                 : "standings_datetime", 
+                     "conferenceSequence"   : "conference_seq",
+                     "divisionSequence"     : "division_seq",
+                     "gamesPlayed"          : "games_played",
+                     "goalDifferential"     : "goal_diff",
+                     "goalAgainst"          : "goals_against",
+                     "goalFor"              : "goals_for",
+                     "pointPctg"            : "points_pctg",
+                     "winPctg"              : "win_pctg",
+                     "homeGamesPlayed"      : "home_games_played",
+                     "homeGoalDifferential" : "home_goals_diff",
+                     "homeGoalsAgainst"     : "home_goals_against",
+                     "homeGoalsFor"         : "home_goals_for",
+                     "homeLosses"           : "home_losses",
+                     "homeOtLosses"         : "home_ot_losses",
+                     "homePoints"           : "home_points",
+                     "homeWins"             : "home_total_wins",
+                     "homeRegulationWins"   : "home_reg_wins",
+                     "roadGamesPlayed"      : "road_games_played",
+                     "roadGoalDifferential" : "road_goals_diff",
+                     "roadGoalsAgainst"     : "road_goals_against",
+                     "roadGoalsFor"         : "road_goals_for",
+                     "roadLosses"           : "road_losses",
+                     "roadOtLosses"         : "road_ot_losses",
+                     "roadPoints"           : "road_points",
+                     "roadWins"             : "road_total_wins",
+                     "roadRegulationWins"   : "road_reg_wins",
+                     "streakCode"           : "streak_code",
+                     "streakCount"          : "streak_count",
+                     "wildcardSequence"     : "wildcard_seq",
+                     "otLosses"             : "ot_losses",
+                     "l10Losses"            : "l10_losses",
+                     "l10Wins"              : "l10_wins" ,
+                     "l10OtLosses"          : "l10_ot_losses"
+                     },inplace=True) 
         print(filteredDf.head)
         return filteredDf
 

@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"
@@ -49,39 +50,37 @@ func (db *Database) PrintStandings() {
 	}
 
 	// Create a tab writer
-	writer := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', tabwriter.AlignRight)
+	writer := tabwriter.NewWriter(os.Stdout, 0, 0, 5, ' ', tabwriter.AlignRight)
 
 	// Print header
+	fmt.Fprintln(writer, "")
 	fmt.Fprintln(writer, "################################################")
 	fmt.Fprintf(writer, "NHL standings (updated at %v)\n", standings_timestamp.Format("2006-01-02 15:04:05"))
 	fmt.Fprintln(writer, "################################################")
 	fmt.Fprintln(writer)
 
-	fmt.Fprintln(writer, "## Central Division ##")
-	fmt.Fprintln(writer, "Team\tPoints\tGames played\t")
-	db.getStandingsByDivision("Central", writer)
-
-	fmt.Fprintln(writer, "## Pacific Division ##")
-	fmt.Fprintln(writer, "Team\tPoints\tGames played\t")
-	db.getStandingsByDivision("Pacific", writer)
-
-	fmt.Fprintln(writer, "## Metropolitan Division ##")
-	fmt.Fprintln(writer, "Team\tPoints\tGames played\t")
-	db.getStandingsByDivision("Metropolitan", writer)
-
-	fmt.Fprintln(writer, "## Atlantic Division ##")
-	fmt.Fprintln(writer, "Team\tPoints\tGames played\t")
-	db.getStandingsByDivision("Atlantic", writer)
+	db.printStandingsByDivision("Central", writer)
+	db.printStandingsByDivision("Pacific", writer)
+	db.printStandingsByDivision("Metropolitan", writer)
+	db.printStandingsByDivision("Atlantic", writer)
 
 	writer.Flush()
 }
 
-func (db *Database) getStandingsByDivision(division_name string, writer *tabwriter.Writer) {
+func (db *Database) printStandingsByDivision(division_name string, writer *tabwriter.Writer) {
+
+	divison := fmt.Sprintf("~%s Division~", division_name)
+	tilde := strings.Repeat("~", len(divison))
+
+	fmt.Fprintf(writer, "\t%s\n", tilde)
+	fmt.Fprintf(writer, "\t%s\n", divison)
+	fmt.Fprintf(writer, "\t%s\n", tilde)
+	fmt.Fprintln(writer, "Team\tPoints\tGames played\tW\tL\tOT\tL10\t")
 
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
-	query := `SELECT t.team_name, cs.points, cs.games_played
+	query := `SELECT t.team_name, cs.points, cs.games_played, cs.wins, cs.losses, cs.ot_losses, cs.l10_wins, cs.l10_losses, cs.l10_ot_losses
 			from current_standings cs 
 			join divisions d on cs.division_id = d.division_id 
 			join teams t on cs.team_id = t.team_id 
@@ -98,13 +97,19 @@ func (db *Database) getStandingsByDivision(division_name string, writer *tabwrit
 		var team_name string
 		var points int
 		var games_playes int
+		var wins int
+		var losses int
+		var ot_losses int
+		var l10wins int
+		var l10losses int
+		var l10otlosses int
 
-		err = rows.Scan(&team_name, &points, &games_playes)
+		err = rows.Scan(&team_name, &points, &games_playes, &wins, &losses, &ot_losses, &l10wins, &l10losses, &l10otlosses)
 		if err != nil {
 			log.Fatalf("Failed to scan row: %v", err)
 		}
 		// Print row data
-		fmt.Fprintf(writer, "%s\t%d\t%d\t\n", team_name, points, games_playes)
+		fmt.Fprintf(writer, "%s\t%d\t%d\t%d\t%d\t%d\t%s\t\n", team_name, points, games_playes, wins, losses, ot_losses, fmt.Sprintf("%d-%d-%d", l10wins, l10losses, l10otlosses))
 	}
 
 	// Check for row iteration errors

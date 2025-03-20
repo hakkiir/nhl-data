@@ -91,8 +91,36 @@ def insert_divisions(engine):
 
 
             statement = text("""INSERT INTO divisions(division_name, division_abbrev, conference_name, conference_abbrev)
-                                VALUES(:division_name, :division_abbrev, :conference_name, :conference_abbrev)""")
+                                VALUES(:division_name, :division_abbrev, :conference_name, :conference_abbrev) ON CONFLICT DO NOTHING""")
 
+            for line in data:
+                session.execute(statement, line)
+            session.commit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        raise SaveToDatabaseError(e) from e
+    
+
+def insert_seasons(engine):
+    try:
+        with Session(engine) as session:
+            data = [
+                {'season_id'                : 20242025,
+                 'regular_season_start_date': datetime.date.fromisoformat("2024-10-04"), 
+                 'regular_season_end_date'  : datetime.date.fromisoformat("2025-04-17"), 
+                 'playoff_end_date'         : datetime.date.fromisoformat("2025-06-24")},
+                {'season_id'                : 20232024,
+                 'regular_season_start_date': datetime.date.fromisoformat("2023-10-10"), 
+                 'regular_season_end_date'  : datetime.date.fromisoformat("2024-04-18"), 
+                 'playoff_end_date'         : datetime.date.fromisoformat("2024-06-24") },
+                {'season_id'                : 20222023,
+                 'regular_season_start_date': datetime.date.fromisoformat("2022-10-07"),
+                 'regular_season_end_date'  : datetime.date.fromisoformat("2023-04-14"),
+                 'playoff_end_date'         : datetime.date.fromisoformat("2023-06-13")}
+                 ]
+
+            statement = text("""INSERT INTO seasons(season_id, regular_season_start_date, regular_season_end_date, playoff_end_date)
+                                VALUES(:season_id, :regular_season_start_date, :regular_season_end_date, :playoff_end_date) ON CONFLICT DO NOTHING""")
             for line in data:
                 session.execute(statement, line)
             session.commit()

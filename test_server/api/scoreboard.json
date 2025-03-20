@@ -1,0 +1,4096 @@
+{
+    "focusedDate": "2025-03-05",
+    "focusedDateCount": 7,
+    "gamesByDate": [
+        {
+            "date": "2025-03-02",
+            "games": [
+                {
+                    "id": 2024020961,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-02",
+                    "gameCenterLink": "/gamecenter/tor-vs-pit/2025/03/02/2024020961",
+                    "venue": {
+                        "default": "PPG Paints Arena"
+                    },
+                    "startTimeUTC": "2025-03-02T18:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 385,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "TNT",
+                            "sequenceNumber": 11
+                        },
+                        {
+                            "id": 501,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "truTV",
+                            "sequenceNumber": 14
+                        },
+                        {
+                            "id": 519,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "MAX",
+                            "sequenceNumber": 18
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 293,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "TSN4",
+                            "sequenceNumber": 137
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 10,
+                        "name": {
+                            "default": "Toronto Maple Leafs",
+                            "fr": "Maple Leafs de Toronto"
+                        },
+                        "commonName": {
+                            "default": "Maple Leafs"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Toronto",
+                            "fr": "de Toronto"
+                        },
+                        "abbrev": "TOR",
+                        "score": 6,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 5,
+                        "name": {
+                            "default": "Pittsburgh Penguins",
+                            "fr": "Penguins de Pittsburgh"
+                        },
+                        "commonName": {
+                            "default": "Penguins"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Pittsburgh",
+                            "fr": "de Pittsburgh"
+                        },
+                        "abbrev": "PIT",
+                        "score": 5,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/160060DAD97E5906?brand=nhl&wt.mc_id=NHL_LEAGUE_PIT_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PIT&utm_content=HORIZONTAL_SCOREBOARD_GM32&CAMEFROM=NHLPENGUINS_NHL_HORIZONTAL_SCOREBOARD",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/160060DAD97E5906?brand=nhl&wt.mc_id=NHL_LEAGUE_PIT_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PIT&utm_content=HORIZONTAL_SCOREBOARD_GM32&CAMEFROM=NHLPENGUINS_NHL_HORIZONTAL_SCOREBOARD",
+                    "period": 4,
+                    "periodDescriptor": {
+                        "number": 4,
+                        "periodType": "OT",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/tor-at-pit-recap-6369530432112",
+                    "threeMinRecapFr": "/fr/video/tor-vs-pit-02-03-year-resume-6369531204112"
+                },
+                {
+                    "id": 2024020962,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-02",
+                    "gameCenterLink": "/gamecenter/bos-vs-min/2025/03/02/2024020962",
+                    "venue": {
+                        "default": "Xcel Energy Center"
+                    },
+                    "startTimeUTC": "2025-03-02T20:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 385,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "TNT",
+                            "sequenceNumber": 11
+                        },
+                        {
+                            "id": 501,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "truTV",
+                            "sequenceNumber": 14
+                        },
+                        {
+                            "id": 519,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "MAX",
+                            "sequenceNumber": 18
+                        },
+                        {
+                            "id": 283,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN360",
+                            "sequenceNumber": 103
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 31,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "NESN",
+                            "sequenceNumber": 396
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 6,
+                        "name": {
+                            "default": "Boston Bruins",
+                            "fr": "Bruins de Boston"
+                        },
+                        "commonName": {
+                            "default": "Bruins"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Boston",
+                            "fr": "de Boston"
+                        },
+                        "abbrev": "BOS",
+                        "score": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 30,
+                        "name": {
+                            "default": "Minnesota Wild",
+                            "fr": "Wild du Minnesota"
+                        },
+                        "commonName": {
+                            "default": "Wild"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Minnesota",
+                            "fr": "du Minnesota"
+                        },
+                        "abbrev": "MIN",
+                        "score": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/060060EB9CB86E80?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_HORIZONTAL_SCOREBOARD_GM28&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=HORIZONTAL_SCOREBOARD_GM28",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/060060EB9CB86E80?brand=nhl&wt.mc_id=NHL_LEAGUE_MIN_HORIZONTAL_SCOREBOARD_GM28&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MIN&utm_content=HORIZONTAL_SCOREBOARD_GM28",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/bos-at-min-recap-6369534417112",
+                    "threeMinRecapFr": "/fr/video/bos-vs-min-02-03-year-resume-6369533529112"
+                },
+                {
+                    "id": 2024020963,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-02",
+                    "gameCenterLink": "/gamecenter/cgy-vs-car/2025/03/02/2024020963",
+                    "venue": {
+                        "default": "Lenovo Center"
+                    },
+                    "startTimeUTC": "2025-03-02T22:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 289,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "SNW",
+                            "sequenceNumber": 34
+                        },
+                        {
+                            "id": 561,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNSO",
+                            "sequenceNumber": 277
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 20,
+                        "name": {
+                            "default": "Calgary Flames",
+                            "fr": "Flames de Calgary"
+                        },
+                        "commonName": {
+                            "default": "Flames"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Calgary",
+                            "fr": "de Calgary"
+                        },
+                        "abbrev": "CGY",
+                        "score": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 12,
+                        "name": {
+                            "default": "Carolina Hurricanes",
+                            "fr": "Hurricanes de la Caroline"
+                        },
+                        "commonName": {
+                            "default": "Hurricanes"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Carolina",
+                            "fr": "de la Caroline"
+                        },
+                        "abbrev": "CAR",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/2D0060F7BAB1821C?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/2D0060F7BAB1821C?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "period": 4,
+                    "periodDescriptor": {
+                        "number": 4,
+                        "periodType": "OT",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/cgy-at-car-recap-6369536329112",
+                    "threeMinRecapFr": "/fr/video/cgy-vs-car-02-03-year-resume-6369534994112"
+                },
+                {
+                    "id": 2024020964,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-02",
+                    "gameCenterLink": "/gamecenter/stl-vs-dal/2025/03/02/2024020964",
+                    "venue": {
+                        "default": "American Airlines Center"
+                    },
+                    "startTimeUTC": "2025-03-02T23:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 385,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "TNT",
+                            "sequenceNumber": 11
+                        },
+                        {
+                            "id": 501,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "truTV",
+                            "sequenceNumber": 14
+                        },
+                        {
+                            "id": 519,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "MAX",
+                            "sequenceNumber": 18
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 19,
+                        "name": {
+                            "default": "St. Louis Blues",
+                            "fr": "Blues de St. Louis"
+                        },
+                        "commonName": {
+                            "default": "Blues"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "St. Louis",
+                            "fr": "de St. Louis"
+                        },
+                        "abbrev": "STL",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 25,
+                        "name": {
+                            "default": "Dallas Stars",
+                            "fr": "Stars de Dallas"
+                        },
+                        "commonName": {
+                            "default": "Stars"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Dallas",
+                            "fr": "de Dallas"
+                        },
+                        "abbrev": "DAL",
+                        "score": 6,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/0C0060DC8FF91DC4?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_HORIZONTAL_SCOREBOARD_GM29&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=HORIZONTAL_SCOREBOARD_GM29",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/0C0060DC8FF91DC4?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_HORIZONTAL_SCOREBOARD_GM29&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=HORIZONTAL_SCOREBOARD_GM29",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/stl-at-dal-recap-6369536095112",
+                    "threeMinRecapFr": "/fr/video/stl-vs-dal-02-03-year-resume-6369538065112"
+                },
+                {
+                    "id": 2024020965,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-02",
+                    "gameCenterLink": "/gamecenter/nsh-vs-nyr/2025/03/02/2024020965",
+                    "venue": {
+                        "default": "Madison Square Garden"
+                    },
+                    "startTimeUTC": "2025-03-03T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 21
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 561,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNSO",
+                            "sequenceNumber": 277
+                        },
+                        {
+                            "id": 55,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MSG 2",
+                            "sequenceNumber": 407
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 18,
+                        "name": {
+                            "default": "Nashville Predators",
+                            "fr": "Predators de Nashville"
+                        },
+                        "commonName": {
+                            "default": "Predators"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Nashville",
+                            "fr": "de Nashville"
+                        },
+                        "abbrev": "NSH",
+                        "score": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 3,
+                        "name": {
+                            "default": "New York Rangers",
+                            "fr": "Rangers de New York"
+                        },
+                        "commonName": {
+                            "default": "Rangers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New York",
+                            "fr": "de New York"
+                        },
+                        "abbrev": "NYR",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/3B0060E3BA9E11FC?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM30&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_240730",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/3B0060E3BA9E11FC?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM30&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_240730",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/nsh-at-nyr-recap-6369536610112",
+                    "threeMinRecapFr": "/fr/video/nsh-vs-nyr-02-03-year-resume-6369538785112"
+                },
+                {
+                    "id": 2024020966,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-02",
+                    "gameCenterLink": "/gamecenter/njd-vs-vgk/2025/03/02/2024020966",
+                    "venue": {
+                        "default": "T-Mobile Arena"
+                    },
+                    "startTimeUTC": "2025-03-03T01:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 283,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN360",
+                            "sequenceNumber": 103
+                        },
+                        {
+                            "id": 409,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "MSGSN",
+                            "sequenceNumber": 402
+                        },
+                        {
+                            "id": 521,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "SCRIPPS",
+                            "sequenceNumber": 657
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 1,
+                        "name": {
+                            "default": "New Jersey Devils",
+                            "fr": "Devils du New Jersey"
+                        },
+                        "commonName": {
+                            "default": "Devils"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New Jersey",
+                            "fr": "du New Jersey"
+                        },
+                        "abbrev": "NJD",
+                        "score": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 54,
+                        "name": {
+                            "default": "Vegas Golden Knights",
+                            "fr": "Golden Knights de Vegas"
+                        },
+                        "commonName": {
+                            "default": "Golden Knights"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Vegas",
+                            "fr": "de Vegas"
+                        },
+                        "abbrev": "VGK",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+                    },
+                    "ticketsLink": "https://www.nhl.com/goldenknights/tickets/",
+                    "ticketsLinkFr": "https://www.nhl.com/goldenknights/tickets/",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/njd-at-vgk-recap-6369540575112",
+                    "threeMinRecapFr": "/fr/video/njd-vs-vgk-02-03-year-resume-6369540383112"
+                }
+            ]
+        },
+        {
+            "date": "2025-03-03",
+            "games": [
+                {
+                    "id": 2024020967,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-03",
+                    "gameCenterLink": "/gamecenter/ott-vs-wsh/2025/03/03/2024020967",
+                    "venue": {
+                        "default": "Capital One Arena"
+                    },
+                    "startTimeUTC": "2025-03-03T23:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 294,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "TSN5",
+                            "sequenceNumber": 135
+                        },
+                        {
+                            "id": 517,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MNMT",
+                            "sequenceNumber": 387
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 9,
+                        "name": {
+                            "default": "Ottawa Senators",
+                            "fr": "Sénateurs d'Ottawa"
+                        },
+                        "commonName": {
+                            "default": "Senators",
+                            "fr": "Sénateurs"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Ottawa",
+                            "fr": "d'Ottawa"
+                        },
+                        "abbrev": "OTT",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 15,
+                        "name": {
+                            "default": "Washington Capitals",
+                            "fr": "Capitals de Washington"
+                        },
+                        "commonName": {
+                            "default": "Capitals"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Washington",
+                            "fr": "de Washington"
+                        },
+                        "abbrev": "WSH",
+                        "score": 5,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/150060E2D4144DC3?brand=nhl&wt.mc_id=NHL_LEAGUE_WSH_HORIZONTAL_SCOREBOARD_GM32&utm_source=league_scoreboard&utm_medium=web_organic&utm_campaign=cb0303os",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/150060E2D4144DC3?brand=nhl&wt.mc_id=NHL_LEAGUE_WSH_HORIZONTAL_SCOREBOARD_GM32&utm_source=league_scoreboard&utm_medium=web_organic&utm_campaign=cb0303os",
+                    "period": 5,
+                    "periodDescriptor": {
+                        "number": 5,
+                        "periodType": "SO",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/ott-at-wsh-recap-6369577135112",
+                    "threeMinRecapFr": "/fr/video/ott-vs-wsh-03-03-year-resume-6369575153112"
+                },
+                {
+                    "id": 2024020968,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-03",
+                    "gameCenterLink": "/gamecenter/buf-vs-mtl/2025/03/03/2024020968",
+                    "venue": {
+                        "default": "Centre Bell"
+                    },
+                    "startTimeUTC": "2025-03-04T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 131,
+                            "market": "H",
+                            "countryCode": "CA",
+                            "network": "TSN2",
+                            "sequenceNumber": 112
+                        },
+                        {
+                            "id": 33,
+                            "market": "H",
+                            "countryCode": "CA",
+                            "network": "RDS",
+                            "sequenceNumber": 132
+                        },
+                        {
+                            "id": 28,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "MSG-B",
+                            "sequenceNumber": 383
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 7,
+                        "name": {
+                            "default": "Buffalo Sabres",
+                            "fr": "Sabres de Buffalo"
+                        },
+                        "commonName": {
+                            "default": "Sabres"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Buffalo",
+                            "fr": "de Buffalo"
+                        },
+                        "abbrev": "BUF",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 8,
+                        "name": {
+                            "default": "Montréal Canadiens",
+                            "fr": "Canadiens de Montréal"
+                        },
+                        "commonName": {
+                            "default": "Canadiens"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Montréal",
+                            "fr": "de Montréal"
+                        },
+                        "abbrev": "MTL",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.ca/event/310060F97F811D2E?lang=en-ca&brand=nhl&wt.mc_id=NHL_LEAGUE_MTL_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MTL&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.ca/event/310060F97F811D2E?lang=fr-ca&brand=nhl&wt.mc_id=NHL_LEAGUE_MTL_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_MTL&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "period": 4,
+                    "periodDescriptor": {
+                        "number": 4,
+                        "periodType": "OT",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/buf-at-mtl-recap-6369574897112",
+                    "threeMinRecapFr": "/fr/video/buf-vs-mtl-03-03-year-resume-6369574791112"
+                },
+                {
+                    "id": 2024020969,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-03",
+                    "gameCenterLink": "/gamecenter/tbl-vs-fla/2025/03/03/2024020969",
+                    "venue": {
+                        "default": "Amerant Bank Arena"
+                    },
+                    "startTimeUTC": "2025-03-04T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 560,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNSUN",
+                            "sequenceNumber": 278
+                        },
+                        {
+                            "id": 521,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "SCRIPPS",
+                            "sequenceNumber": 657
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 14,
+                        "name": {
+                            "default": "Tampa Bay Lightning",
+                            "fr": "Lightning de Tampa Bay"
+                        },
+                        "commonName": {
+                            "default": "Lightning"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Tampa Bay",
+                            "fr": "de Tampa Bay"
+                        },
+                        "abbrev": "TBL",
+                        "score": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 13,
+                        "name": {
+                            "default": "Florida Panthers",
+                            "fr": "Panthers de la Floride"
+                        },
+                        "commonName": {
+                            "default": "Panthers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Florida",
+                            "fr": "de la Floride"
+                        },
+                        "abbrev": "FLA",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+                    },
+                    "ticketsLink": "https://seatgeek.com/florida-panthers-tickets/3-3-2025-sunrise-florida-amerant-bank-arena/nhl/16976642?aid=15999&pid=website&rid=80824&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website",
+                    "ticketsLinkFr": "https://seatgeek.com/florida-panthers-tickets/3-3-2025-sunrise-florida-amerant-bank-arena/nhl/16976642?aid=15999&pid=website&rid=80824&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/tbl-at-fla-recap-6369577238112",
+                    "threeMinRecapFr": "/fr/video/tbl-vs-fla-03-03-year-resume-6369574490112"
+                },
+                {
+                    "id": 2024020970,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-03",
+                    "gameCenterLink": "/gamecenter/nyi-vs-nyr/2025/03/03/2024020970",
+                    "venue": {
+                        "default": "Madison Square Garden"
+                    },
+                    "startTimeUTC": "2025-03-04T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 324,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "NHLN",
+                            "sequenceNumber": 34
+                        },
+                        {
+                            "id": 409,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "MSGSN",
+                            "sequenceNumber": 402
+                        },
+                        {
+                            "id": 27,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MSG",
+                            "sequenceNumber": 408
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 2,
+                        "name": {
+                            "default": "New York Islanders",
+                            "fr": "Islanders de New York"
+                        },
+                        "commonName": {
+                            "default": "Islanders"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New York",
+                            "fr": "de New York"
+                        },
+                        "abbrev": "NYI",
+                        "score": 0,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 3,
+                        "name": {
+                            "default": "New York Rangers",
+                            "fr": "Rangers de New York"
+                        },
+                        "commonName": {
+                            "default": "Rangers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New York",
+                            "fr": "de New York"
+                        },
+                        "abbrev": "NYR",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/3B0060E3BAA011FE?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM31&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_240730",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/3B0060E3BAA011FE?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM31&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_240730",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/nyi-at-nyr-recap-6369576829112",
+                    "threeMinRecapFr": "/fr/video/nyi-vs-nyr-03-03-year-resume-6369576338112"
+                },
+                {
+                    "id": 2024020971,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-03",
+                    "gameCenterLink": "/gamecenter/sjs-vs-tor/2025/03/03/2024020971",
+                    "venue": {
+                        "default": "Scotiabank Arena"
+                    },
+                    "startTimeUTC": "2025-03-04T00:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 548,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "Prime",
+                            "sequenceNumber": 105
+                        },
+                        {
+                            "id": 314,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "NBCSCA",
+                            "sequenceNumber": 384
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 28,
+                        "name": {
+                            "default": "San Jose Sharks",
+                            "fr": "Sharks de San Jose"
+                        },
+                        "commonName": {
+                            "default": "Sharks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "San Jose",
+                            "fr": "de San Jose"
+                        },
+                        "abbrev": "SJS",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 10,
+                        "name": {
+                            "default": "Toronto Maple Leafs",
+                            "fr": "Maple Leafs de Toronto"
+                        },
+                        "commonName": {
+                            "default": "Maple Leafs"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Toronto",
+                            "fr": "de Toronto"
+                        },
+                        "abbrev": "TOR",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+                    },
+                    "ticketsLink": "https://www.nhl.com/mapleleafs/tickets/",
+                    "ticketsLinkFr": "https://www.nhl.com/mapleleafs/tickets/",
+                    "period": 5,
+                    "periodDescriptor": {
+                        "number": 5,
+                        "periodType": "SO",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/sjs-at-tor-recap-6369576698112",
+                    "threeMinRecapFr": "/fr/video/sjs-vs-tor-03-03-year-resume-6369577651112"
+                },
+                {
+                    "id": 2024020972,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-03",
+                    "gameCenterLink": "/gamecenter/lak-vs-chi/2025/03/03/2024020972",
+                    "venue": {
+                        "default": "United Center"
+                    },
+                    "startTimeUTC": "2025-03-04T01:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 551,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "CHSN",
+                            "sequenceNumber": 243
+                        },
+                        {
+                            "id": 564,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNW",
+                            "sequenceNumber": 279
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 26,
+                        "name": {
+                            "default": "Los Angeles Kings",
+                            "fr": "Kings de Los Angeles"
+                        },
+                        "commonName": {
+                            "default": "Kings"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Los Angeles",
+                            "fr": "de Los Angeles"
+                        },
+                        "abbrev": "LAK",
+                        "score": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 16,
+                        "name": {
+                            "default": "Chicago Blackhawks",
+                            "fr": "Blackhawks de Chicago"
+                        },
+                        "commonName": {
+                            "default": "Blackhawks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Chicago",
+                            "fr": "de Chicago"
+                        },
+                        "abbrev": "CHI",
+                        "score": 5,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/040060E39E06178F?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/040060E39E06178F?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/lak-at-chi-recap-6369577601112",
+                    "threeMinRecapFr": "/fr/video/lak-vs-chi-03-03-year-resume-6369579056112"
+                }
+            ]
+        },
+        {
+            "date": "2025-03-04",
+            "games": [
+                {
+                    "id": 2024020973,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/nsh-vs-bos/2025/03/04/2024020973",
+                    "venue": {
+                        "default": "TD Garden"
+                    },
+                    "startTimeUTC": "2025-03-05T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 283,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN360",
+                            "sequenceNumber": 103
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 561,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNSO",
+                            "sequenceNumber": 277
+                        },
+                        {
+                            "id": 31,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "NESN",
+                            "sequenceNumber": 396
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 18,
+                        "name": {
+                            "default": "Nashville Predators",
+                            "fr": "Predators de Nashville"
+                        },
+                        "commonName": {
+                            "default": "Predators"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Nashville",
+                            "fr": "de Nashville"
+                        },
+                        "abbrev": "NSH",
+                        "score": 6,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 6,
+                        "name": {
+                            "default": "Boston Bruins",
+                            "fr": "Bruins de Boston"
+                        },
+                        "commonName": {
+                            "default": "Bruins"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Boston",
+                            "fr": "de Boston"
+                        },
+                        "abbrev": "BOS",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/010060D9D4F27385?brand=nhl&wt.mc_id=NHL_LEAGUE_BOS_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BOS&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/010060D9D4F27385?brand=nhl&wt.mc_id=NHL_LEAGUE_BOS_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BOS&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/nsh-at-bos-recap-6369615336112",
+                    "threeMinRecapFr": "/fr/video/nsh-vs-bos-04-03-year-resume-6369615643112"
+                },
+                {
+                    "id": 2024020974,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/sjs-vs-buf/2025/03/04/2024020974",
+                    "venue": {
+                        "default": "KeyBank Center"
+                    },
+                    "startTimeUTC": "2025-03-05T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 28,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MSG-B",
+                            "sequenceNumber": 383
+                        },
+                        {
+                            "id": 314,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "NBCSCA",
+                            "sequenceNumber": 384
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 28,
+                        "name": {
+                            "default": "San Jose Sharks",
+                            "fr": "Sharks de San Jose"
+                        },
+                        "commonName": {
+                            "default": "Sharks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "San Jose",
+                            "fr": "de San Jose"
+                        },
+                        "abbrev": "SJS",
+                        "score": 6,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 7,
+                        "name": {
+                            "default": "Buffalo Sabres",
+                            "fr": "Sabres de Buffalo"
+                        },
+                        "commonName": {
+                            "default": "Sabres"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Buffalo",
+                            "fr": "de Buffalo"
+                        },
+                        "abbrev": "BUF",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/000060DADA238B34?brand=nhl&wt.mc_id=NHL_LEAGUE_BUF_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BUF&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/000060DADA238B34?brand=nhl&wt.mc_id=NHL_LEAGUE_BUF_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_BUF&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/sjs-at-buf-recap-6369615158112",
+                    "threeMinRecapFr": "/fr/video/sjs-vs-buf-04-03-year-resume-6369615479112"
+                },
+                {
+                    "id": 2024020975,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/car-vs-det/2025/03/04/2024020975",
+                    "venue": {
+                        "default": "Little Caesars Arena"
+                    },
+                    "startTimeUTC": "2025-03-05T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 562,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNDET",
+                            "sequenceNumber": 271
+                        },
+                        {
+                            "id": 561,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNSO",
+                            "sequenceNumber": 277
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 12,
+                        "name": {
+                            "default": "Carolina Hurricanes",
+                            "fr": "Hurricanes de la Caroline"
+                        },
+                        "commonName": {
+                            "default": "Hurricanes"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Carolina",
+                            "fr": "de la Caroline"
+                        },
+                        "abbrev": "CAR",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 17,
+                        "name": {
+                            "default": "Detroit Red Wings",
+                            "fr": "Red Wings de Detroit"
+                        },
+                        "commonName": {
+                            "default": "Red Wings"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Detroit",
+                            "fr": "de Detroit"
+                        },
+                        "abbrev": "DET",
+                        "score": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/080060E2A6792AA6?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/080060E2A6792AA6?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/car-at-det-recap-6369615546112",
+                    "threeMinRecapFr": "/fr/video/car-vs-det-04-03-year-resume-6369615047112"
+                },
+                {
+                    "id": 2024020976,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/cbj-vs-tbl/2025/03/04/2024020976",
+                    "venue": {
+                        "default": "Amalie Arena"
+                    },
+                    "startTimeUTC": "2025-03-05T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 565,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNOH",
+                            "sequenceNumber": 276
+                        },
+                        {
+                            "id": 560,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNSUN",
+                            "sequenceNumber": 278
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 29,
+                        "name": {
+                            "default": "Columbus Blue Jackets",
+                            "fr": "Blue Jackets de Columbus"
+                        },
+                        "commonName": {
+                            "default": "Blue Jackets"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Columbus",
+                            "fr": "de Columbus"
+                        },
+                        "abbrev": "CBJ",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 14,
+                        "name": {
+                            "default": "Tampa Bay Lightning",
+                            "fr": "Lightning de Tampa Bay"
+                        },
+                        "commonName": {
+                            "default": "Lightning"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Tampa Bay",
+                            "fr": "de Tampa Bay"
+                        },
+                        "abbrev": "TBL",
+                        "score": 6,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/0D006101AB9231C0?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/0D006101AB9231C0?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/cbj-at-tbl-recap-6369615364112",
+                    "threeMinRecapFr": "/fr/video/cbj-vs-tbl-04-03-year-resume-6369616067112"
+                },
+                {
+                    "id": 2024020977,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/cgy-vs-phi/2025/03/04/2024020977",
+                    "venue": {
+                        "default": "Wells Fargo Center"
+                    },
+                    "startTimeUTC": "2025-03-05T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 289,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "SNW",
+                            "sequenceNumber": 34
+                        },
+                        {
+                            "id": 322,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "NBCSP",
+                            "sequenceNumber": 380
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 20,
+                        "name": {
+                            "default": "Calgary Flames",
+                            "fr": "Flames de Calgary"
+                        },
+                        "commonName": {
+                            "default": "Flames"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Calgary",
+                            "fr": "de Calgary"
+                        },
+                        "abbrev": "CGY",
+                        "score": 6,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 4,
+                        "name": {
+                            "default": "Philadelphia Flyers",
+                            "fr": "Flyers de Philadelphie"
+                        },
+                        "commonName": {
+                            "default": "Flyers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Philadelphia",
+                            "fr": "de Philadelphie"
+                        },
+                        "abbrev": "PHI",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/300060E1CD5C21BE?brand=nhl&wt.mc_id=NHL_LEAGUE_PHI_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PHI&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/300060E1CD5C21BE?brand=nhl&wt.mc_id=NHL_LEAGUE_PHI_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PHI&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/cgy-at-phi-recap-6369615654112",
+                    "threeMinRecapFr": "/fr/video/cgy-vs-phi-04-03-year-resume-6369617433112"
+                },
+                {
+                    "id": 2024020978,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/wpg-vs-nyi/2025/03/04/2024020978",
+                    "venue": {
+                        "default": "UBS Arena"
+                    },
+                    "startTimeUTC": "2025-03-05T00:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 292,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "TSN3",
+                            "sequenceNumber": 134
+                        },
+                        {
+                            "id": 409,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MSGSN",
+                            "sequenceNumber": 402
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 52,
+                        "name": {
+                            "default": "Winnipeg Jets",
+                            "fr": "Jets de Winnipeg"
+                        },
+                        "commonName": {
+                            "default": "Jets"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Winnipeg",
+                            "fr": "de Winnipeg"
+                        },
+                        "abbrev": "WPG",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 2,
+                        "name": {
+                            "default": "New York Islanders",
+                            "fr": "Islanders de New York"
+                        },
+                        "commonName": {
+                            "default": "Islanders"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New York",
+                            "fr": "de New York"
+                        },
+                        "abbrev": "NYI",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/300060E1EE2F28CE?brand=nhl&wt.mc_id=NHL_LEAGUE_NYI_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYI&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/300060E1EE2F28CE?brand=nhl&wt.mc_id=NHL_LEAGUE_NYI_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYI&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/wpg-at-nyi-recap-6369617558112",
+                    "threeMinRecapFr": "/fr/video/wpg-vs-nyi-04-03-year-resume-6369617654112"
+                },
+                {
+                    "id": 2024020979,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/njd-vs-dal/2025/03/04/2024020979",
+                    "venue": {
+                        "default": "American Airlines Center"
+                    },
+                    "startTimeUTC": "2025-03-05T01:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 329,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "ESPN+",
+                            "sequenceNumber": 16
+                        },
+                        {
+                            "id": 391,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "HULU",
+                            "sequenceNumber": 17
+                        },
+                        {
+                            "id": 574,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "Disney+",
+                            "sequenceNumber": 20
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 1,
+                        "name": {
+                            "default": "New Jersey Devils",
+                            "fr": "Devils du New Jersey"
+                        },
+                        "commonName": {
+                            "default": "Devils"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New Jersey",
+                            "fr": "du New Jersey"
+                        },
+                        "abbrev": "NJD",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 25,
+                        "name": {
+                            "default": "Dallas Stars",
+                            "fr": "Stars de Dallas"
+                        },
+                        "commonName": {
+                            "default": "Stars"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Dallas",
+                            "fr": "de Dallas"
+                        },
+                        "abbrev": "DAL",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/0C0060DC95902029?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/0C0060DC95902029?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/njd-at-dal-recap-6369617691112",
+                    "threeMinRecapFr": "/fr/video/njd-vs-dal-04-03-year-resume-6369617391112"
+                },
+                {
+                    "id": 2024020980,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/pit-vs-col/2025/03/04/2024020980",
+                    "venue": {
+                        "default": "Ball Arena"
+                    },
+                    "startTimeUTC": "2025-03-05T02:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-07:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 287,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SNE",
+                            "sequenceNumber": 30
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 528,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "SN-PIT",
+                            "sequenceNumber": 375
+                        },
+                        {
+                            "id": 2,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "ALT",
+                            "sequenceNumber": 376
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 5,
+                        "name": {
+                            "default": "Pittsburgh Penguins",
+                            "fr": "Penguins de Pittsburgh"
+                        },
+                        "commonName": {
+                            "default": "Penguins"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Pittsburgh",
+                            "fr": "de Pittsburgh"
+                        },
+                        "abbrev": "PIT",
+                        "score": 1,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 21,
+                        "name": {
+                            "default": "Colorado Avalanche",
+                            "fr": "Avalanche du Colorado"
+                        },
+                        "commonName": {
+                            "default": "Avalanche"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Colorado",
+                            "fr": "du Colorado"
+                        },
+                        "abbrev": "COL",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/1E0060E1BB042C16?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/1E0060E1BB042C16?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/pit-at-col-recap-6369618911112",
+                    "threeMinRecapFr": "/fr/video/pit-vs-col-04-03-year-resume-6369618004112"
+                },
+                {
+                    "id": 2024020981,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/ana-vs-edm/2025/03/04/2024020981",
+                    "venue": {
+                        "default": "Rogers Place"
+                    },
+                    "startTimeUTC": "2025-03-05T02:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-07:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 284,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN1",
+                            "sequenceNumber": 102
+                        },
+                        {
+                            "id": 553,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "Victory+",
+                            "sequenceNumber": 373
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 24,
+                        "name": {
+                            "default": "Anaheim Ducks",
+                            "fr": "Ducks d'Anaheim"
+                        },
+                        "commonName": {
+                            "default": "Ducks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Anaheim",
+                            "fr": "d'Anaheim"
+                        },
+                        "abbrev": "ANA",
+                        "score": 6,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 22,
+                        "name": {
+                            "default": "Edmonton Oilers",
+                            "fr": "Oilers d'Edmonton"
+                        },
+                        "commonName": {
+                            "default": "Oilers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Edmonton",
+                            "fr": "d'Edmonton"
+                        },
+                        "abbrev": "EDM",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.ca/event/110061138A453403?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.ca/event/110061138A453403?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/ana-at-edm-recap-6369619482112",
+                    "threeMinRecapFr": "/fr/video/ana-vs-edm-04-03-year-resume-6369618099112"
+                },
+                {
+                    "id": 2024020982,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-04",
+                    "gameCenterLink": "/gamecenter/min-vs-sea/2025/03/04/2024020982",
+                    "venue": {
+                        "default": "Climate Pledge Arena"
+                    },
+                    "startTimeUTC": "2025-03-05T03:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 568,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNNOX",
+                            "sequenceNumber": 275
+                        },
+                        {
+                            "id": 554,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "KHN",
+                            "sequenceNumber": 339
+                        },
+                        {
+                            "id": 570,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNWIX",
+                            "sequenceNumber": 411
+                        },
+                        {
+                            "id": 388,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "KONG",
+                            "sequenceNumber": 654
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 30,
+                        "name": {
+                            "default": "Minnesota Wild",
+                            "fr": "Wild du Minnesota"
+                        },
+                        "commonName": {
+                            "default": "Wild"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Minnesota",
+                            "fr": "du Minnesota"
+                        },
+                        "abbrev": "MIN",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 55,
+                        "name": {
+                            "default": "Seattle Kraken",
+                            "fr": "Kraken de Seattle"
+                        },
+                        "commonName": {
+                            "default": "Kraken"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Seattle",
+                            "fr": "de Seattle"
+                        },
+                        "abbrev": "SEA",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/0F0060CAA40A5654?brand=nhl&wt.mc_id=NHL_LEAGUE_SEA_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SEA&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/0F0060CAA40A5654?brand=nhl&wt.mc_id=NHL_LEAGUE_SEA_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_SEA&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/min-at-sea-recap-6369622201112",
+                    "threeMinRecapFr": "/fr/video/min-vs-sea-04-03-year-resume-6369622979112"
+                }
+            ]
+        },
+        {
+            "date": "2025-03-05",
+            "games": [
+                {
+                    "id": 2024020983,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-05",
+                    "gameCenterLink": "/gamecenter/wsh-vs-nyr/2025/03/05/2024020983",
+                    "venue": {
+                        "default": "Madison Square Garden"
+                    },
+                    "startTimeUTC": "2025-03-06T00:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 385,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "TNT",
+                            "sequenceNumber": 11
+                        },
+                        {
+                            "id": 501,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "truTV",
+                            "sequenceNumber": 14
+                        },
+                        {
+                            "id": 519,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "MAX",
+                            "sequenceNumber": 18
+                        },
+                        {
+                            "id": 27,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MSG",
+                            "sequenceNumber": 408
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 15,
+                        "name": {
+                            "default": "Washington Capitals",
+                            "fr": "Capitals de Washington"
+                        },
+                        "commonName": {
+                            "default": "Capitals"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Washington",
+                            "fr": "de Washington"
+                        },
+                        "abbrev": "WSH",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 3,
+                        "name": {
+                            "default": "New York Rangers",
+                            "fr": "Rangers de New York"
+                        },
+                        "commonName": {
+                            "default": "Rangers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New York",
+                            "fr": "de New York"
+                        },
+                        "abbrev": "NYR",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/3B0060E3BAA31200?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM32&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_240730",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/3B0060E3BAA31200?brand=nhl&wt.mc_id=NHL_LEAGUE_NYR_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NYR&utm_content=HORIZONTAL_SCOREBOARD_GM32&CAMEFROM=CFC_RANGERS_WEB_NHL_HP-SCOREBOX_240730",
+                    "period": 4,
+                    "periodDescriptor": {
+                        "number": 4,
+                        "periodType": "OT",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/wsh-at-nyr-recap-6369661388112",
+                    "threeMinRecapFr": "/fr/video/wsh-vs-nyr-05-03-year-resume-6369662067112"
+                },
+                {
+                    "id": 2024020984,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-05",
+                    "gameCenterLink": "/gamecenter/ott-vs-chi/2025/03/05/2024020984",
+                    "venue": {
+                        "default": "United Center"
+                    },
+                    "startTimeUTC": "2025-03-06T00:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 101
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 551,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "CHSN",
+                            "sequenceNumber": 243
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 9,
+                        "name": {
+                            "default": "Ottawa Senators",
+                            "fr": "Sénateurs d'Ottawa"
+                        },
+                        "commonName": {
+                            "default": "Senators",
+                            "fr": "Sénateurs"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Ottawa",
+                            "fr": "d'Ottawa"
+                        },
+                        "abbrev": "OTT",
+                        "score": 4,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 16,
+                        "name": {
+                            "default": "Chicago Blackhawks",
+                            "fr": "Blackhawks de Chicago"
+                        },
+                        "commonName": {
+                            "default": "Blackhawks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Chicago",
+                            "fr": "de Chicago"
+                        },
+                        "abbrev": "CHI",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/040060E39E0A179A?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/040060E39E0A179A?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "period": 4,
+                    "periodDescriptor": {
+                        "number": 4,
+                        "periodType": "OT",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/ott-at-chi-recap-6369659395112",
+                    "threeMinRecapFr": "/fr/video/ott-vs-chi-05-03-year-resume-6369661382112"
+                },
+                {
+                    "id": 2024020985,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-05",
+                    "gameCenterLink": "/gamecenter/tor-vs-vgk/2025/03/05/2024020985",
+                    "venue": {
+                        "default": "T-Mobile Arena"
+                    },
+                    "startTimeUTC": "2025-03-06T03:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 385,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "TNT",
+                            "sequenceNumber": 11
+                        },
+                        {
+                            "id": 501,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "truTV",
+                            "sequenceNumber": 14
+                        },
+                        {
+                            "id": 519,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "MAX",
+                            "sequenceNumber": 18
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 293,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "TSN4",
+                            "sequenceNumber": 137
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 10,
+                        "name": {
+                            "default": "Toronto Maple Leafs",
+                            "fr": "Maple Leafs de Toronto"
+                        },
+                        "commonName": {
+                            "default": "Maple Leafs"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Toronto",
+                            "fr": "de Toronto"
+                        },
+                        "abbrev": "TOR",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 54,
+                        "name": {
+                            "default": "Vegas Golden Knights",
+                            "fr": "Golden Knights de Vegas"
+                        },
+                        "commonName": {
+                            "default": "Golden Knights"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Vegas",
+                            "fr": "de Vegas"
+                        },
+                        "abbrev": "VGK",
+                        "score": 5,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+                    },
+                    "ticketsLink": "https://www.nhl.com/goldenknights/tickets/",
+                    "ticketsLinkFr": "https://www.nhl.com/goldenknights/tickets/",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/tor-at-vgk-recap-6369665227112",
+                    "threeMinRecapFr": "/fr/video/tor-vs-vgk-05-03-year-resume-6369663764112"
+                },
+                {
+                    "id": 2024020986,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-05",
+                    "gameCenterLink": "/gamecenter/ana-vs-van/2025/03/05/2024020986",
+                    "venue": {
+                        "default": "Rogers Arena"
+                    },
+                    "startTimeUTC": "2025-03-06T03:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 290,
+                            "market": "H",
+                            "countryCode": "CA",
+                            "network": "SNP",
+                            "sequenceNumber": 33
+                        },
+                        {
+                            "id": 553,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "Victory+",
+                            "sequenceNumber": 373
+                        },
+                        {
+                            "id": 219,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "KCOP-13",
+                            "sequenceNumber": 656
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 24,
+                        "name": {
+                            "default": "Anaheim Ducks",
+                            "fr": "Ducks d'Anaheim"
+                        },
+                        "commonName": {
+                            "default": "Ducks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Anaheim",
+                            "fr": "d'Anaheim"
+                        },
+                        "abbrev": "ANA",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 23,
+                        "name": {
+                            "default": "Vancouver Canucks",
+                            "fr": "Canucks de Vancouver"
+                        },
+                        "commonName": {
+                            "default": "Canucks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Vancouver",
+                            "fr": "de Vancouver"
+                        },
+                        "abbrev": "VAN",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
+                    },
+                    "ticketsLink": "https://www.nhl.com/canucks/tickets/",
+                    "ticketsLinkFr": "https://www.nhl.com/canucks/tickets/",
+                    "period": 3,
+                    "periodDescriptor": {
+                        "number": 3,
+                        "periodType": "REG",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/ana-at-van-recap-6369667124112",
+                    "threeMinRecapFr": "/fr/video/ana-vs-van-05-03-year-resume-6369665834112"
+                },
+                {
+                    "id": 2024020987,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-05",
+                    "gameCenterLink": "/gamecenter/stl-vs-lak/2025/03/05/2024020987",
+                    "venue": {
+                        "default": "Crypto.com Arena"
+                    },
+                    "startTimeUTC": "2025-03-06T03:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 21
+                        },
+                        {
+                            "id": 566,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNMW",
+                            "sequenceNumber": 273
+                        },
+                        {
+                            "id": 564,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNW",
+                            "sequenceNumber": 279
+                        }
+                    ],
+                    "gameState": "OFF",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 19,
+                        "name": {
+                            "default": "St. Louis Blues",
+                            "fr": "Blues de St. Louis"
+                        },
+                        "commonName": {
+                            "default": "Blues"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "St. Louis",
+                            "fr": "de St. Louis"
+                        },
+                        "abbrev": "STL",
+                        "score": 3,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 26,
+                        "name": {
+                            "default": "Los Angeles Kings",
+                            "fr": "Kings de Los Angeles"
+                        },
+                        "commonName": {
+                            "default": "Kings"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Los Angeles",
+                            "fr": "de Los Angeles"
+                        },
+                        "abbrev": "LAK",
+                        "score": 2,
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+                    },
+                    "ticketsLink": "https://shop.axs.com/?c=axs&e=84643187638908354",
+                    "ticketsLinkFr": "https://shop.axs.com/?c=axs&e=84643187638908354",
+                    "period": 5,
+                    "periodDescriptor": {
+                        "number": 5,
+                        "periodType": "SO",
+                        "maxRegulationPeriods": 3
+                    },
+                    "threeMinRecap": "/video/stl-at-lak-recap-6369667010112",
+                    "threeMinRecapFr": "/fr/video/stl-vs-lak-05-03-year-resume-6369667112112"
+                }
+            ]
+        },
+        {
+            "date": "2025-03-06",
+            "games": [
+                {
+                    "id": 2024020988,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/uta-vs-det/2025/03/06/2024020988",
+                    "venue": {
+                        "default": "Little Caesars Arena"
+                    },
+                    "startTimeUTC": "2025-03-07T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 562,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNDET",
+                            "sequenceNumber": 271
+                        },
+                        {
+                            "id": 558,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "Utah16",
+                            "sequenceNumber": 372
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 59,
+                        "name": {
+                            "default": "Utah Hockey Club",
+                            "fr": "Club de hockey de l'Utah"
+                        },
+                        "commonName": {
+                            "default": "Utah Hockey Club",
+                            "fr": "Club de hockey de l'Utah"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Utah",
+                            "fr": "de l'Utah"
+                        },
+                        "abbrev": "UTA",
+                        "record": "27-25-9",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 17,
+                        "name": {
+                            "default": "Detroit Red Wings",
+                            "fr": "Red Wings de Detroit"
+                        },
+                        "commonName": {
+                            "default": "Red Wings"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Detroit",
+                            "fr": "de Detroit"
+                        },
+                        "abbrev": "DET",
+                        "record": "30-25-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/080060E2A67E2AC8?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM34",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/080060E2A67E2AC8?brand=nhl&wt.mc_id=NHL_LEAGUE_DET_HORIZONTAL_SCOREBOARD_GM34&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DET&utm_content=HORIZONTAL_SCOREBOARD_GM34"
+                },
+                {
+                    "id": 2024020989,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/buf-vs-tbl/2025/03/06/2024020989",
+                    "venue": {
+                        "default": "Amalie Arena"
+                    },
+                    "startTimeUTC": "2025-03-07T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 309,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "ESPN",
+                            "sequenceNumber": 10
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 7,
+                        "name": {
+                            "default": "Buffalo Sabres",
+                            "fr": "Sabres de Buffalo"
+                        },
+                        "commonName": {
+                            "default": "Sabres"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Buffalo",
+                            "fr": "de Buffalo"
+                        },
+                        "abbrev": "BUF",
+                        "record": "24-30-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 14,
+                        "name": {
+                            "default": "Tampa Bay Lightning",
+                            "fr": "Lightning de Tampa Bay"
+                        },
+                        "commonName": {
+                            "default": "Lightning"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Tampa Bay",
+                            "fr": "de Tampa Bay"
+                        },
+                        "abbrev": "TBL",
+                        "record": "36-21-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/0D006101AB9731D8?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/0D006101AB9731D8?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                },
+                {
+                    "id": 2024020990,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/cbj-vs-fla/2025/03/06/2024020990",
+                    "venue": {
+                        "default": "Amerant Bank Arena"
+                    },
+                    "startTimeUTC": "2025-03-07T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 565,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNOH",
+                            "sequenceNumber": 276
+                        },
+                        {
+                            "id": 521,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "SCRIPPS",
+                            "sequenceNumber": 657
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 29,
+                        "name": {
+                            "default": "Columbus Blue Jackets",
+                            "fr": "Blue Jackets de Columbus"
+                        },
+                        "commonName": {
+                            "default": "Blue Jackets"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Columbus",
+                            "fr": "de Columbus"
+                        },
+                        "abbrev": "CBJ",
+                        "record": "30-23-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 13,
+                        "name": {
+                            "default": "Florida Panthers",
+                            "fr": "Panthers de la Floride"
+                        },
+                        "commonName": {
+                            "default": "Panthers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Florida",
+                            "fr": "de la Floride"
+                        },
+                        "abbrev": "FLA",
+                        "record": "38-21-3",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+                    },
+                    "ticketsLink": "https://seatgeek.com/florida-panthers-tickets/3-6-2025-sunrise-florida-amerant-bank-arena/nhl/16976643?aid=15999&pid=website&rid=80824&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website",
+                    "ticketsLinkFr": "https://seatgeek.com/florida-panthers-tickets/3-6-2025-sunrise-florida-amerant-bank-arena/nhl/16976643?aid=15999&pid=website&rid=80824&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website"
+                },
+                {
+                    "id": 2024020991,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/wpg-vs-phi/2025/03/06/2024020991",
+                    "venue": {
+                        "default": "Wells Fargo Center"
+                    },
+                    "startTimeUTC": "2025-03-07T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 292,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "TSN3",
+                            "sequenceNumber": 134
+                        },
+                        {
+                            "id": 322,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "NBCSP",
+                            "sequenceNumber": 380
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 52,
+                        "name": {
+                            "default": "Winnipeg Jets",
+                            "fr": "Jets de Winnipeg"
+                        },
+                        "commonName": {
+                            "default": "Jets"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Winnipeg",
+                            "fr": "de Winnipeg"
+                        },
+                        "abbrev": "WPG",
+                        "record": "42-16-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 4,
+                        "name": {
+                            "default": "Philadelphia Flyers",
+                            "fr": "Flyers de Philadelphie"
+                        },
+                        "commonName": {
+                            "default": "Flyers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Philadelphia",
+                            "fr": "de Philadelphie"
+                        },
+                        "abbrev": "PHI",
+                        "record": "27-27-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/300060E1CD6021D9?brand=nhl&wt.mc_id=NHL_LEAGUE_PHI_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PHI&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/300060E1CD6021D9?brand=nhl&wt.mc_id=NHL_LEAGUE_PHI_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PHI&utm_content=HORIZONTAL_SCOREBOARD_GM31"
+                },
+                {
+                    "id": 2024020992,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/bos-vs-car/2025/03/06/2024020992",
+                    "venue": {
+                        "default": "Lenovo Center"
+                    },
+                    "startTimeUTC": "2025-03-07T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 21
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 561,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNSO",
+                            "sequenceNumber": 277
+                        },
+                        {
+                            "id": 31,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "NESN",
+                            "sequenceNumber": 396
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 6,
+                        "name": {
+                            "default": "Boston Bruins",
+                            "fr": "Bruins de Boston"
+                        },
+                        "commonName": {
+                            "default": "Bruins"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Boston",
+                            "fr": "de Boston"
+                        },
+                        "abbrev": "BOS",
+                        "record": "28-27-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 12,
+                        "name": {
+                            "default": "Carolina Hurricanes",
+                            "fr": "Hurricanes de la Caroline"
+                        },
+                        "commonName": {
+                            "default": "Hurricanes"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Carolina",
+                            "fr": "de la Caroline"
+                        },
+                        "abbrev": "CAR",
+                        "record": "36-22-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/2D0060F7BAB58233?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/2D0060F7BAB58233?brand=nhl&wt.mc_id=NHL_LEAGUE_CAR_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CAR&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                },
+                {
+                    "id": 2024020993,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/sea-vs-nsh/2025/03/06/2024020993",
+                    "venue": {
+                        "default": "Bridgestone Arena"
+                    },
+                    "startTimeUTC": "2025-03-07T01:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 561,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNSO",
+                            "sequenceNumber": 277
+                        },
+                        {
+                            "id": 554,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "KHN",
+                            "sequenceNumber": 339
+                        },
+                        {
+                            "id": 388,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "KONG",
+                            "sequenceNumber": 654
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 55,
+                        "name": {
+                            "default": "Seattle Kraken",
+                            "fr": "Kraken de Seattle"
+                        },
+                        "commonName": {
+                            "default": "Kraken"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Seattle",
+                            "fr": "de Seattle"
+                        },
+                        "abbrev": "SEA",
+                        "record": "26-32-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 18,
+                        "name": {
+                            "default": "Nashville Predators",
+                            "fr": "Predators de Nashville"
+                        },
+                        "commonName": {
+                            "default": "Predators"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Nashville",
+                            "fr": "de Nashville"
+                        },
+                        "abbrev": "NSH",
+                        "record": "22-32-7",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/1B0061139AC018F9?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/1B0061139AC018F9?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM31"
+                },
+                {
+                    "id": 2024020994,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/cgy-vs-dal/2025/03/06/2024020994",
+                    "venue": {
+                        "default": "American Airlines Center"
+                    },
+                    "startTimeUTC": "2025-03-07T01:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 284,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN1",
+                            "sequenceNumber": 102
+                        },
+                        {
+                            "id": 553,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "Victory+",
+                            "sequenceNumber": 373
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 20,
+                        "name": {
+                            "default": "Calgary Flames",
+                            "fr": "Flames de Calgary"
+                        },
+                        "commonName": {
+                            "default": "Flames"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Calgary",
+                            "fr": "de Calgary"
+                        },
+                        "abbrev": "CGY",
+                        "record": "29-23-9",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 25,
+                        "name": {
+                            "default": "Dallas Stars",
+                            "fr": "Stars de Dallas"
+                        },
+                        "commonName": {
+                            "default": "Stars"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Dallas",
+                            "fr": "de Dallas"
+                        },
+                        "abbrev": "DAL",
+                        "record": "40-19-2",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/0C0060DC93641E68?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=HORIZONTAL_SCOREBOARD_GM31",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/0C0060DC93641E68?brand=nhl&wt.mc_id=NHL_LEAGUE_DAL_HORIZONTAL_SCOREBOARD_GM31&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_DAL&utm_content=HORIZONTAL_SCOREBOARD_GM31"
+                },
+                {
+                    "id": 2024020995,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/mtl-vs-edm/2025/03/06/2024020995",
+                    "venue": {
+                        "default": "Rogers Place"
+                    },
+                    "startTimeUTC": "2025-03-07T02:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-07:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 289,
+                            "market": "H",
+                            "countryCode": "CA",
+                            "network": "SNW",
+                            "sequenceNumber": 34
+                        },
+                        {
+                            "id": 131,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "TSN2",
+                            "sequenceNumber": 112
+                        },
+                        {
+                            "id": 33,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "RDS",
+                            "sequenceNumber": 132
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 8,
+                        "name": {
+                            "default": "Montréal Canadiens",
+                            "fr": "Canadiens de Montréal"
+                        },
+                        "commonName": {
+                            "default": "Canadiens"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Montréal",
+                            "fr": "de Montréal"
+                        },
+                        "abbrev": "MTL",
+                        "record": "30-26-5",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 22,
+                        "name": {
+                            "default": "Edmonton Oilers",
+                            "fr": "Oilers d'Edmonton"
+                        },
+                        "commonName": {
+                            "default": "Oilers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Edmonton",
+                            "fr": "d'Edmonton"
+                        },
+                        "abbrev": "EDM",
+                        "record": "35-22-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.ca/event/110061138A493413?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.ca/event/110061138A493413?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                },
+                {
+                    "id": 2024020996,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-06",
+                    "gameCenterLink": "/gamecenter/sjs-vs-col/2025/03/06/2024020996",
+                    "venue": {
+                        "default": "Ball Arena"
+                    },
+                    "startTimeUTC": "2025-03-07T02:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-07:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 309,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "ESPN",
+                            "sequenceNumber": 10
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 28,
+                        "name": {
+                            "default": "San Jose Sharks",
+                            "fr": "Sharks de San Jose"
+                        },
+                        "commonName": {
+                            "default": "Sharks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "San Jose",
+                            "fr": "de San Jose"
+                        },
+                        "abbrev": "SJS",
+                        "record": "17-37-9",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 21,
+                        "name": {
+                            "default": "Colorado Avalanche",
+                            "fr": "Avalanche du Colorado"
+                        },
+                        "commonName": {
+                            "default": "Avalanche"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Colorado",
+                            "fr": "du Colorado"
+                        },
+                        "abbrev": "COL",
+                        "record": "36-24-2",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/1E0060E1BB0D2C1B?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/1E0060E1BB0D2C1B?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                }
+            ]
+        },
+        {
+            "date": "2025-03-07",
+            "games": [
+                {
+                    "id": 2024020997,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-07",
+                    "gameCenterLink": "/gamecenter/wpg-vs-njd/2025/03/07/2024020997",
+                    "venue": {
+                        "default": "Prudential Center"
+                    },
+                    "startTimeUTC": "2025-03-08T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 292,
+                            "market": "A",
+                            "countryCode": "CA",
+                            "network": "TSN3",
+                            "sequenceNumber": 134
+                        },
+                        {
+                            "id": 409,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MSGSN",
+                            "sequenceNumber": 402
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 52,
+                        "name": {
+                            "default": "Winnipeg Jets",
+                            "fr": "Jets de Winnipeg"
+                        },
+                        "commonName": {
+                            "default": "Jets"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Winnipeg",
+                            "fr": "de Winnipeg"
+                        },
+                        "abbrev": "WPG",
+                        "record": "42-16-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 1,
+                        "name": {
+                            "default": "New Jersey Devils",
+                            "fr": "Devils du New Jersey"
+                        },
+                        "commonName": {
+                            "default": "Devils"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New Jersey",
+                            "fr": "du New Jersey"
+                        },
+                        "abbrev": "NJD",
+                        "record": "33-24-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/020060E298B7301B?brand=nhl&wt.mc_id=NHL_LEAGUE_NJD_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NJD&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/020060E298B7301B?brand=nhl&wt.mc_id=NHL_LEAGUE_NJD_HORIZONTAL_SCOREBOARD_GM30&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NJD&utm_content=HORIZONTAL_SCOREBOARD_GM30"
+                },
+                {
+                    "id": 2024020998,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-07",
+                    "gameCenterLink": "/gamecenter/det-vs-wsh/2025/03/07/2024020998",
+                    "venue": {
+                        "default": "Capital One Arena"
+                    },
+                    "startTimeUTC": "2025-03-08T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 290,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SNP",
+                            "sequenceNumber": 33
+                        },
+                        {
+                            "id": 283,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN360",
+                            "sequenceNumber": 103
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 562,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNDET",
+                            "sequenceNumber": 271
+                        },
+                        {
+                            "id": 517,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "MNMT",
+                            "sequenceNumber": 387
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 17,
+                        "name": {
+                            "default": "Detroit Red Wings",
+                            "fr": "Red Wings de Detroit"
+                        },
+                        "commonName": {
+                            "default": "Red Wings"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Detroit",
+                            "fr": "de Detroit"
+                        },
+                        "abbrev": "DET",
+                        "record": "30-25-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 15,
+                        "name": {
+                            "default": "Washington Capitals",
+                            "fr": "Capitals de Washington"
+                        },
+                        "commonName": {
+                            "default": "Capitals"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Washington",
+                            "fr": "de Washington"
+                        },
+                        "abbrev": "WSH",
+                        "record": "40-14-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/150060E2D4174DCA?brand=nhl&wt.mc_id=NHL_LEAGUE_WSH_HORIZONTAL_SCOREBOARD_GM33&utm_source=league_scoreboard&utm_medium=web_organic&utm_campaign=cb0307dr",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/150060E2D4174DCA?brand=nhl&wt.mc_id=NHL_LEAGUE_WSH_HORIZONTAL_SCOREBOARD_GM33&utm_source=league_scoreboard&utm_medium=web_organic&utm_campaign=cb0307dr"
+                },
+                {
+                    "id": 2024020999,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-07",
+                    "gameCenterLink": "/gamecenter/uta-vs-chi/2025/03/07/2024020999",
+                    "venue": {
+                        "default": "United Center"
+                    },
+                    "startTimeUTC": "2025-03-08T01:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 551,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "CHSN",
+                            "sequenceNumber": 243
+                        },
+                        {
+                            "id": 558,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "Utah16",
+                            "sequenceNumber": 372
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 59,
+                        "name": {
+                            "default": "Utah Hockey Club",
+                            "fr": "Club de hockey de l'Utah"
+                        },
+                        "commonName": {
+                            "default": "Utah Hockey Club",
+                            "fr": "Club de hockey de l'Utah"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Utah",
+                            "fr": "de l'Utah"
+                        },
+                        "abbrev": "UTA",
+                        "record": "27-25-9",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 16,
+                        "name": {
+                            "default": "Chicago Blackhawks",
+                            "fr": "Blackhawks de Chicago"
+                        },
+                        "commonName": {
+                            "default": "Blackhawks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Chicago",
+                            "fr": "de Chicago"
+                        },
+                        "abbrev": "CHI",
+                        "record": "19-35-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/040060E39E0E17A3?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/040060E39E0E17A3?brand=nhl&wt.mc_id=NHL_LEAGUE_CHI_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CHI&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                },
+                {
+                    "id": 2024021000,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-07",
+                    "gameCenterLink": "/gamecenter/min-vs-van/2025/03/07/2024021000",
+                    "venue": {
+                        "default": "Rogers Arena"
+                    },
+                    "startTimeUTC": "2025-03-08T03:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 290,
+                            "market": "H",
+                            "countryCode": "CA",
+                            "network": "SNP",
+                            "sequenceNumber": 33
+                        },
+                        {
+                            "id": 568,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNNOX",
+                            "sequenceNumber": 275
+                        },
+                        {
+                            "id": 569,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNWI",
+                            "sequenceNumber": 410
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 30,
+                        "name": {
+                            "default": "Minnesota Wild",
+                            "fr": "Wild du Minnesota"
+                        },
+                        "commonName": {
+                            "default": "Wild"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Minnesota",
+                            "fr": "du Minnesota"
+                        },
+                        "abbrev": "MIN",
+                        "record": "36-22-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 23,
+                        "name": {
+                            "default": "Vancouver Canucks",
+                            "fr": "Canucks de Vancouver"
+                        },
+                        "commonName": {
+                            "default": "Canucks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Vancouver",
+                            "fr": "de Vancouver"
+                        },
+                        "abbrev": "VAN",
+                        "record": "28-22-11",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg"
+                    },
+                    "ticketsLink": "https://www.nhl.com/canucks/tickets/",
+                    "ticketsLinkFr": "https://www.nhl.com/canucks/tickets/"
+                },
+                {
+                    "id": 2024021001,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-07",
+                    "gameCenterLink": "/gamecenter/pit-vs-vgk/2025/03/07/2024021001",
+                    "venue": {
+                        "default": "T-Mobile Arena"
+                    },
+                    "startTimeUTC": "2025-03-08T03:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 21
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 528,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "SN-PIT",
+                            "sequenceNumber": 375
+                        },
+                        {
+                            "id": 521,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "SCRIPPS",
+                            "sequenceNumber": 657
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 5,
+                        "name": {
+                            "default": "Pittsburgh Penguins",
+                            "fr": "Penguins de Pittsburgh"
+                        },
+                        "commonName": {
+                            "default": "Penguins"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Pittsburgh",
+                            "fr": "de Pittsburgh"
+                        },
+                        "abbrev": "PIT",
+                        "record": "24-30-10",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 54,
+                        "name": {
+                            "default": "Vegas Golden Knights",
+                            "fr": "Golden Knights de Vegas"
+                        },
+                        "commonName": {
+                            "default": "Golden Knights"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Vegas",
+                            "fr": "de Vegas"
+                        },
+                        "abbrev": "VGK",
+                        "record": "37-18-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg"
+                    },
+                    "ticketsLink": "https://www.nhl.com/goldenknights/tickets/",
+                    "ticketsLinkFr": "https://www.nhl.com/goldenknights/tickets/"
+                },
+                {
+                    "id": 2024021002,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-07",
+                    "gameCenterLink": "/gamecenter/stl-vs-ana/2025/03/07/2024021002",
+                    "venue": {
+                        "default": "Honda Center"
+                    },
+                    "startTimeUTC": "2025-03-08T03:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 566,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "FDSNMW",
+                            "sequenceNumber": 273
+                        },
+                        {
+                            "id": 553,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "Victory+",
+                            "sequenceNumber": 373
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 19,
+                        "name": {
+                            "default": "St. Louis Blues",
+                            "fr": "Blues de St. Louis"
+                        },
+                        "commonName": {
+                            "default": "Blues"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "St. Louis",
+                            "fr": "de St. Louis"
+                        },
+                        "abbrev": "STL",
+                        "record": "30-27-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 24,
+                        "name": {
+                            "default": "Anaheim Ducks",
+                            "fr": "Ducks d'Anaheim"
+                        },
+                        "commonName": {
+                            "default": "Ducks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Anaheim",
+                            "fr": "d'Anaheim"
+                        },
+                        "abbrev": "ANA",
+                        "record": "27-27-7",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/090060DABAF14988?brand=ducks&wt.mc_id=NHL_LEAGUE_ANA_HORIZONTAL_SCOREBOARD_GM30&camefrom=cfc_ducks_2425_web_scoreboard-league&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_ANA&utm_content=HORIZONTAL_SCOREBOARD_GM30",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/090060DABAF14988?brand=ducks&wt.mc_id=NHL_LEAGUE_ANA_HORIZONTAL_SCOREBOARD_GM30&camefrom=cfc_ducks_2425_web_scoreboard-league&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_ANA&utm_content=HORIZONTAL_SCOREBOARD_GM30"
+                }
+            ]
+        },
+        {
+            "date": "2025-03-08",
+            "games": [
+                {
+                    "id": 2024021003,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/nyr-vs-ott/2025/03/08/2024021003",
+                    "venue": {
+                        "default": "Canadian Tire Centre"
+                    },
+                    "startTimeUTC": "2025-03-08T17:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        },
+                        {
+                            "id": 294,
+                            "market": "H",
+                            "countryCode": "CA",
+                            "network": "TSN5",
+                            "sequenceNumber": 135
+                        },
+                        {
+                            "id": 27,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "MSG",
+                            "sequenceNumber": 408
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 3,
+                        "name": {
+                            "default": "New York Rangers",
+                            "fr": "Rangers de New York"
+                        },
+                        "commonName": {
+                            "default": "Rangers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New York",
+                            "fr": "de New York"
+                        },
+                        "abbrev": "NYR",
+                        "record": "31-26-5",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 9,
+                        "name": {
+                            "default": "Ottawa Senators",
+                            "fr": "Sénateurs d'Ottawa"
+                        },
+                        "commonName": {
+                            "default": "Senators",
+                            "fr": "Sénateurs"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Ottawa",
+                            "fr": "d'Ottawa"
+                        },
+                        "abbrev": "OTT",
+                        "record": "31-25-5",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.ca/event/31006107F9E9511E?brand=nhl&wt.mc_id=NHL_LEAGUE_OTT_HORIZONTAL_SCOREBOARD_GM29&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_OTT&utm_content=HORIZONTAL_SCOREBOARD_GM29",
+                    "ticketsLinkFr": "https://www.nhl.com/fr/senators/tickets/"
+                },
+                {
+                    "id": 2024021004,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/sea-vs-phi/2025/03/08/2024021004",
+                    "venue": {
+                        "default": "Wells Fargo Center"
+                    },
+                    "startTimeUTC": "2025-03-08T17:30:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 384,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "ABC",
+                            "sequenceNumber": 1
+                        },
+                        {
+                            "id": 329,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "ESPN+",
+                            "sequenceNumber": 16
+                        },
+                        {
+                            "id": 284,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN1",
+                            "sequenceNumber": 102
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 55,
+                        "name": {
+                            "default": "Seattle Kraken",
+                            "fr": "Kraken de Seattle"
+                        },
+                        "commonName": {
+                            "default": "Kraken"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Seattle",
+                            "fr": "de Seattle"
+                        },
+                        "abbrev": "SEA",
+                        "record": "26-32-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 4,
+                        "name": {
+                            "default": "Philadelphia Flyers",
+                            "fr": "Flyers de Philadelphie"
+                        },
+                        "commonName": {
+                            "default": "Flyers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Philadelphia",
+                            "fr": "de Philadelphie"
+                        },
+                        "abbrev": "PHI",
+                        "record": "27-27-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/300060E1CD6421E1?brand=nhl&wt.mc_id=NHL_LEAGUE_PHI_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PHI&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/300060E1CD6421E1?brand=nhl&wt.mc_id=NHL_LEAGUE_PHI_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_PHI&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                },
+                {
+                    "id": 2024021005,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/bos-vs-tbl/2025/03/08/2024021005",
+                    "venue": {
+                        "default": "Amalie Arena"
+                    },
+                    "startTimeUTC": "2025-03-08T20:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 384,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "ABC",
+                            "sequenceNumber": 1
+                        },
+                        {
+                            "id": 329,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "ESPN+",
+                            "sequenceNumber": 16
+                        },
+                        {
+                            "id": 284,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN1",
+                            "sequenceNumber": 102
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 6,
+                        "name": {
+                            "default": "Boston Bruins",
+                            "fr": "Bruins de Boston"
+                        },
+                        "commonName": {
+                            "default": "Bruins"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Boston",
+                            "fr": "de Boston"
+                        },
+                        "abbrev": "BOS",
+                        "record": "28-27-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 14,
+                        "name": {
+                            "default": "Tampa Bay Lightning",
+                            "fr": "Lightning de Tampa Bay"
+                        },
+                        "commonName": {
+                            "default": "Lightning"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Tampa Bay",
+                            "fr": "de Tampa Bay"
+                        },
+                        "abbrev": "TBL",
+                        "record": "36-21-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/0D006101AB9D31EA?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/0D006101AB9D31EA?brand=nhl&wt.mc_id=NHL_LEAGUE_TBL_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_TBL&utm_content=HORIZONTAL_SCOREBOARD_GM33"
+                },
+                {
+                    "id": 2024021006,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/buf-vs-fla/2025/03/08/2024021006",
+                    "venue": {
+                        "default": "Amerant Bank Arena"
+                    },
+                    "startTimeUTC": "2025-03-08T23:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-05:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 28,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "MSG-B",
+                            "sequenceNumber": 383
+                        },
+                        {
+                            "id": 521,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "SCRIPPS",
+                            "sequenceNumber": 657
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 7,
+                        "name": {
+                            "default": "Buffalo Sabres",
+                            "fr": "Sabres de Buffalo"
+                        },
+                        "commonName": {
+                            "default": "Sabres"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Buffalo",
+                            "fr": "de Buffalo"
+                        },
+                        "abbrev": "BUF",
+                        "record": "24-30-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 13,
+                        "name": {
+                            "default": "Florida Panthers",
+                            "fr": "Panthers de la Floride"
+                        },
+                        "commonName": {
+                            "default": "Panthers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Florida",
+                            "fr": "de la Floride"
+                        },
+                        "abbrev": "FLA",
+                        "record": "38-21-3",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg"
+                    },
+                    "ticketsLink": "https://seatgeek.com/florida-panthers-tickets/3-8-2025-sunrise-florida-amerant-bank-arena/nhl/16976644?aid=15999&pid=website&rid=80824&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website",
+                    "ticketsLinkFr": "https://seatgeek.com/florida-panthers-tickets/3-8-2025-sunrise-florida-amerant-bank-arena/nhl/16976644?aid=15999&pid=website&rid=80824&utm_medium=partnership&utm_source=panthers_ticketing&utm_campaign=website"
+                },
+                {
+                    "id": 2024021007,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/tor-vs-col/2025/03/08/2024021007",
+                    "venue": {
+                        "default": "Ball Arena"
+                    },
+                    "startTimeUTC": "2025-03-09T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-07:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 21
+                        },
+                        {
+                            "id": 4,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "CBC",
+                            "sequenceNumber": 25
+                        },
+                        {
+                            "id": 324,
+                            "market": "N",
+                            "countryCode": "US",
+                            "network": "NHLN",
+                            "sequenceNumber": 34
+                        },
+                        {
+                            "id": 2,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "ALT",
+                            "sequenceNumber": 376
+                        },
+                        {
+                            "id": 336,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "KTVD",
+                            "sequenceNumber": 623
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 10,
+                        "name": {
+                            "default": "Toronto Maple Leafs",
+                            "fr": "Maple Leafs de Toronto"
+                        },
+                        "commonName": {
+                            "default": "Maple Leafs"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Toronto",
+                            "fr": "de Toronto"
+                        },
+                        "abbrev": "TOR",
+                        "record": "38-21-3",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 21,
+                        "name": {
+                            "default": "Colorado Avalanche",
+                            "fr": "Avalanche du Colorado"
+                        },
+                        "commonName": {
+                            "default": "Avalanche"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Colorado",
+                            "fr": "du Colorado"
+                        },
+                        "abbrev": "COL",
+                        "record": "36-24-2",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/1E0060E1BB152C1D?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/1E0060E1BB152C1D?brand=nhl&wt.mc_id=NHL_LEAGUE_COL_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_COL&utm_content=HORIZONTAL_SCOREBOARD_GM33"
+                },
+                {
+                    "id": 2024021008,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/mtl-vs-cgy/2025/03/08/2024021008",
+                    "venue": {
+                        "default": "Scotiabank Saddledome"
+                    },
+                    "startTimeUTC": "2025-03-09T00:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-07:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 21
+                        },
+                        {
+                            "id": 286,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "CITY",
+                            "sequenceNumber": 26
+                        },
+                        {
+                            "id": 281,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "TVAS",
+                            "sequenceNumber": 109
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 8,
+                        "name": {
+                            "default": "Montréal Canadiens",
+                            "fr": "Canadiens de Montréal"
+                        },
+                        "commonName": {
+                            "default": "Canadiens"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Montréal",
+                            "fr": "de Montréal"
+                        },
+                        "abbrev": "MTL",
+                        "record": "30-26-5",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 20,
+                        "name": {
+                            "default": "Calgary Flames",
+                            "fr": "Flames de Calgary"
+                        },
+                        "commonName": {
+                            "default": "Flames"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Calgary",
+                            "fr": "de Calgary"
+                        },
+                        "abbrev": "CGY",
+                        "record": "29-23-9",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.ca/event/1100610DD09F3F61?brand=nhl&wt.mc_id=NHL_LEAGUE_CGY_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CGY&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.ca/event/1100610DD09F3F61?brand=nhl&wt.mc_id=NHL_LEAGUE_CGY_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_CGY&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                },
+                {
+                    "id": 2024021009,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/chi-vs-nsh/2025/03/08/2024021009",
+                    "venue": {
+                        "default": "Bridgestone Arena"
+                    },
+                    "startTimeUTC": "2025-03-09T01:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-06:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 551,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "CHSN",
+                            "sequenceNumber": 243
+                        },
+                        {
+                            "id": 561,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNSO",
+                            "sequenceNumber": 277
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 16,
+                        "name": {
+                            "default": "Chicago Blackhawks",
+                            "fr": "Blackhawks de Chicago"
+                        },
+                        "commonName": {
+                            "default": "Blackhawks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Chicago",
+                            "fr": "de Chicago"
+                        },
+                        "abbrev": "CHI",
+                        "record": "19-35-8",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 18,
+                        "name": {
+                            "default": "Nashville Predators",
+                            "fr": "Predators de Nashville"
+                        },
+                        "commonName": {
+                            "default": "Predators"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Nashville",
+                            "fr": "de Nashville"
+                        },
+                        "abbrev": "NSH",
+                        "record": "22-32-7",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.com/event/1B0061139AC41903?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM32",
+                    "ticketsLinkFr": "https://www.ticketmaster.com/event/1B0061139AC41903?brand=nhl&wt.mc_id=NHL_LEAGUE_NSH_HORIZONTAL_SCOREBOARD_GM32&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_NSH&utm_content=HORIZONTAL_SCOREBOARD_GM32"
+                },
+                {
+                    "id": 2024021010,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/stl-vs-lak/2025/03/08/2024021010",
+                    "venue": {
+                        "default": "Crypto.com Arena"
+                    },
+                    "startTimeUTC": "2025-03-09T01:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 572,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "Matrix-MW",
+                            "sequenceNumber": 1
+                        },
+                        {
+                            "id": 573,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "KMOV-TV",
+                            "sequenceNumber": 1
+                        },
+                        {
+                            "id": 564,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "FDSNW",
+                            "sequenceNumber": 279
+                        },
+                        {
+                            "id": 553,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "Victory+",
+                            "sequenceNumber": 373
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 19,
+                        "name": {
+                            "default": "St. Louis Blues",
+                            "fr": "Blues de St. Louis"
+                        },
+                        "commonName": {
+                            "default": "Blues"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "St. Louis",
+                            "fr": "de St. Louis"
+                        },
+                        "abbrev": "STL",
+                        "record": "30-27-6",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 26,
+                        "name": {
+                            "default": "Los Angeles Kings",
+                            "fr": "Kings de Los Angeles"
+                        },
+                        "commonName": {
+                            "default": "Kings"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Los Angeles",
+                            "fr": "de Los Angeles"
+                        },
+                        "abbrev": "LAK",
+                        "record": "31-20-9",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+                    },
+                    "ticketsLink": "https://shop.axs.com/?c=axs&e=84643187638908357",
+                    "ticketsLinkFr": "https://shop.axs.com/?c=axs&e=84643187638908357"
+                },
+                {
+                    "id": 2024021011,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/dal-vs-edm/2025/03/08/2024021011",
+                    "venue": {
+                        "default": "Rogers Place"
+                    },
+                    "startTimeUTC": "2025-03-09T03:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-07:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 4,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "CBC",
+                            "sequenceNumber": 25
+                        },
+                        {
+                            "id": 286,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "CITY",
+                            "sequenceNumber": 26
+                        },
+                        {
+                            "id": 282,
+                            "market": "N",
+                            "countryCode": "CA",
+                            "network": "SN",
+                            "sequenceNumber": 101
+                        },
+                        {
+                            "id": 553,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "Victory+",
+                            "sequenceNumber": 373
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 25,
+                        "name": {
+                            "default": "Dallas Stars",
+                            "fr": "Stars de Dallas"
+                        },
+                        "commonName": {
+                            "default": "Stars"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Dallas",
+                            "fr": "de Dallas"
+                        },
+                        "abbrev": "DAL",
+                        "record": "40-19-2",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 22,
+                        "name": {
+                            "default": "Edmonton Oilers",
+                            "fr": "Oilers d'Edmonton"
+                        },
+                        "commonName": {
+                            "default": "Oilers"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "Edmonton",
+                            "fr": "d'Edmonton"
+                        },
+                        "abbrev": "EDM",
+                        "record": "35-22-4",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+                    },
+                    "ticketsLink": "https://www.ticketmaster.ca/event/110061138A4D341E?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM33",
+                    "ticketsLinkFr": "https://www.ticketmaster.ca/event/110061138A4D341E?brand=nhl&wt.mc_id=NHL_LEAGUE_EDM_HORIZONTAL_SCOREBOARD_GM33&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE_EDM&utm_content=HORIZONTAL_SCOREBOARD_GM33"
+                },
+                {
+                    "id": 2024021012,
+                    "season": 20242025,
+                    "gameType": 2,
+                    "gameDate": "2025-03-08",
+                    "gameCenterLink": "/gamecenter/nyi-vs-sjs/2025/03/08/2024021012",
+                    "venue": {
+                        "default": "SAP Center at San Jose"
+                    },
+                    "startTimeUTC": "2025-03-09T03:00:00Z",
+                    "easternUTCOffset": "-05:00",
+                    "venueUTCOffset": "-08:00",
+                    "tvBroadcasts": [
+                        {
+                            "id": 314,
+                            "market": "H",
+                            "countryCode": "US",
+                            "network": "NBCSCA",
+                            "sequenceNumber": 384
+                        },
+                        {
+                            "id": 409,
+                            "market": "A",
+                            "countryCode": "US",
+                            "network": "MSGSN",
+                            "sequenceNumber": 402
+                        }
+                    ],
+                    "gameState": "FUT",
+                    "gameScheduleState": "OK",
+                    "awayTeam": {
+                        "id": 2,
+                        "name": {
+                            "default": "New York Islanders",
+                            "fr": "Islanders de New York"
+                        },
+                        "commonName": {
+                            "default": "Islanders"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "New York",
+                            "fr": "de New York"
+                        },
+                        "abbrev": "NYI",
+                        "record": "28-26-7",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg"
+                    },
+                    "homeTeam": {
+                        "id": 28,
+                        "name": {
+                            "default": "San Jose Sharks",
+                            "fr": "Sharks de San Jose"
+                        },
+                        "commonName": {
+                            "default": "Sharks"
+                        },
+                        "placeNameWithPreposition": {
+                            "default": "San Jose",
+                            "fr": "de San Jose"
+                        },
+                        "abbrev": "SJS",
+                        "record": "17-37-9",
+                        "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg"
+                    },
+                    "ticketsLink": "https://www.nhl.com/sharks/tickets/",
+                    "ticketsLinkFr": "https://www.nhl.com/sharks/tickets/"
+                }
+            ]
+        }
+    ]
+}
